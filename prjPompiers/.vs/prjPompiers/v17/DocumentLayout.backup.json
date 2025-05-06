@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\prjpompiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\prjpompiers\\connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\prjpompiers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\prjpompiers\\mesdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:mesdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\prjpompiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Connexion.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Connexion.cs",
+              "RelativeDocumentMoniker": "Connexion.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Connexion.cs",
+              "RelativeToolTip": "Connexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:37:38.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:36:14.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mesDatas.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\mesDatas.cs",
+              "RelativeDocumentMoniker": "mesDatas.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\mesDatas.cs",
+              "RelativeToolTip": "mesDatas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:36:06.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:31:00.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:30:00.171Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
