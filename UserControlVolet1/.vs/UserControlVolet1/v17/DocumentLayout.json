@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{10B619E7-E5A2-463B-876A-A5A734473C73}|UserControlVolet1.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\usercontrolvolet1\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{10B619E7-E5A2-463B-876A-A5A734473C73}|UserControlVolet1.csproj|solutionrelative:usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B619E7-E5A2-463B-876A-A5A734473C73}|UserControlVolet1.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\usercontrolvolet1\\usercontrolpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{10B619E7-E5A2-463B-876A-A5A734473C73}|UserControlVolet1.csproj|solutionrelative:usercontrolpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControlPanel.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlVolet1\\UserControlPanel.cs",
+              "RelativeDocumentMoniker": "UserControlPanel.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlVolet1\\UserControlPanel.cs [Design]",
+              "RelativeToolTip": "UserControlPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:35:47.089Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
