@@ -3,3 +3,13 @@ C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.Form1.
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.Properties.Resources.resources
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.csproj.GenerateResource.cache
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.csproj.CoreCompileInputs.cache
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\prjPompiers.exe.config
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\prjPompiers.exe
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\prjPompiers.pdb
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\System.Data.SQLite.dll
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\System.Data.SQLite.xml
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompi.DDEE856D.Up2Date
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.dll
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.pdb

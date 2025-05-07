@@ -1,6 +1,6 @@
 ﻿namespace UserControlVolet1
 {
-    partial class UserControl1
+    partial class UCMission
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,118 +29,123 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMission = new System.Windows.Forms.Label();
+            this.lblType = new System.Windows.Forms.Label();
+            this.lblCaserne = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.pctLogo = new System.Windows.Forms.PictureBox();
+            this.pctPDF = new System.Windows.Forms.PictureBox();
+            this.pctInfo = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPDF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(66, 51);
+            this.groupBox1.Controls.Add(this.lblMission);
+            this.groupBox1.Controls.Add(this.lblType);
+            this.groupBox1.Controls.Add(this.lblCaserne);
+            this.groupBox1.Controls.Add(this.lblDate);
+            this.groupBox1.Controls.Add(this.lblId);
+            this.groupBox1.Controls.Add(this.pctLogo);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(689, 200);
+            this.groupBox1.Size = new System.Drawing.Size(878, 193);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // pictureBox1
+            // lblMission
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 41);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 113);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblMission.AutoSize = true;
+            this.lblMission.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMission.Location = new System.Drawing.Point(483, 92);
+            this.lblMission.Name = "lblMission";
+            this.lblMission.Size = new System.Drawing.Size(386, 25);
+            this.lblMission.TabIndex = 5;
+            this.lblMission.Text = "--> Accident de la route Voiture contre Vélo";
             // 
-            // label1
+            // lblType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblType.AutoSize = true;
+            this.lblType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblType.Location = new System.Drawing.Point(157, 92);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(64, 25);
+            this.lblType.TabIndex = 4;
+            this.lblType.Text = "label4";
             // 
-            // label2
+            // lblCaserne
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(315, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.lblCaserne.AutoSize = true;
+            this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaserne.Location = new System.Drawing.Point(523, 15);
+            this.lblCaserne.Name = "lblCaserne";
+            this.lblCaserne.Size = new System.Drawing.Size(98, 25);
+            this.lblCaserne.TabIndex = 3;
+            this.lblCaserne.Text = "Caserne :";
             // 
-            // label3
+            // lblDate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(515, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(304, 15);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(100, 25);
+            this.lblDate.TabIndex = 2;
+            this.lblDate.Text = "Début le : ";
             // 
-            // pictureBox2
+            // lblId
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(771, 66);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(71, 74);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(158, 15);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(116, 25);
+            this.lblId.TabIndex = 1;
+            this.lblId.Text = "Id Mission : ";
             // 
-            // pictureBox3
+            // pctLogo
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(771, 166);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(71, 66);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pctLogo.Location = new System.Drawing.Point(27, 41);
+            this.pctLogo.Name = "pctLogo";
+            this.pctLogo.Size = new System.Drawing.Size(112, 113);
+            this.pctLogo.TabIndex = 0;
+            this.pctLogo.TabStop = false;
             // 
-            // label4
+            // pctPDF
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(157, 92);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.pctPDF.Location = new System.Drawing.Point(887, 18);
+            this.pctPDF.Name = "pctPDF";
+            this.pctPDF.Size = new System.Drawing.Size(71, 74);
+            this.pctPDF.TabIndex = 1;
+            this.pctPDF.TabStop = false;
             // 
-            // label5
+            // pctInfo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(483, 92);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.pctInfo.Location = new System.Drawing.Point(887, 111);
+            this.pctInfo.Name = "pctInfo";
+            this.pctInfo.Size = new System.Drawing.Size(71, 71);
+            this.pctInfo.TabIndex = 2;
+            this.pctInfo.TabStop = false;
             // 
-            // UserControl1
+            // UCMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pctInfo);
+            this.Controls.Add(this.pctPDF);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(857, 450);
+            this.Name = "UCMission";
+            this.Size = new System.Drawing.Size(982, 208);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPDF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInfo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,13 +153,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pctLogo;
+        private System.Windows.Forms.Label lblCaserne;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.PictureBox pctPDF;
+        private System.Windows.Forms.PictureBox pctInfo;
+        private System.Windows.Forms.Label lblMission;
+        private System.Windows.Forms.Label lblType;
     }
 }
