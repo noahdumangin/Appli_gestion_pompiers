@@ -40,6 +40,7 @@
             this.pctLogo.Size = new System.Drawing.Size(89, 75);
             this.pctLogo.TabIndex = 0;
             this.pctLogo.TabStop = false;
+            this.pctLogo.Click += new System.EventHandler(this.pctLogo_Click);
             // 
             // lbInfo
             // 
@@ -59,6 +60,7 @@
             this.Controls.Add(this.pctLogo);
             this.Name = "UserControlPanel";
             this.Size = new System.Drawing.Size(456, 125);
+            //this.Load += new System.EventHandler(this.UserControlPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

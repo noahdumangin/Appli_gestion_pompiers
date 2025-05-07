@@ -64,6 +64,12 @@
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Volet4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volet4.Designer.cs">
+      <DependentUpon>Volet4.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
