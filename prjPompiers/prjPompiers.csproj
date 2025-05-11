@@ -49,6 +49,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UserControlMission">
+      <HintPath>..\UserControlMission\bin\Debug\UserControlMission.dll</HintPath>
+    </Reference>
     <Reference Include="UserControlVolet1">
       <HintPath>..\UserControlVolet1\obj\Debug\UserControlVolet1.dll</HintPath>
     </Reference>
