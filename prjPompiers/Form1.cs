@@ -10,9 +10,7 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using UserControlVolet1;
 using UserControlMissions;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
-using System.Linq.Expressions;
-using System.Xml;
+
 
 namespace prjPompiers
 {
@@ -59,14 +57,14 @@ namespace prjPompiers
             int y = 20;
             for (int i = 0; i < list.Count; i++)
             {   
-                Image image = Image.FromFile("girophare.gif");
-                string nom = list[i];
-                Volet4 volet4 = new Volet4();
-                UserControlPanel panel = new UserControlPanel(image, nom, volet4);
-                panel.Name = "panel" + i;
-                panel.Location = new Point(x,y);
-                grbList.Controls.Add(panel);
-                y+= panel.Height + 5;
+                PictureBox pict = new PictureBox();
+                pict.Image = Image.FromFile("girophare.gif");
+                pict.SizeMode = PictureBoxSizeMode.StretchImage;
+                pict.Name = list[i];
+                pict.Location = new Point(x,y);
+                pict.Click += new EventHandler(Afficher);
+                grbList.Controls.Add(pict);
+                y+= pict.Height + 20;
             }
 
             x = 6;
@@ -81,18 +79,15 @@ namespace prjPompiers
                 panMission.Controls.Add(mission);
                 y += mission.Height ;
             }
+        }    
+        
+        private void Afficher(object sender, EventArgs e)
+        {
+            Volet4 form = new Volet4();
+            DialogResult dr = form.ShowDialog();
 
+        }
 
-            //vScrollBar1.Minimum = 0;
-            //vScrollBar1.SmallChange = 20;
-            //vScrollBar1.LargeChange = grpMission.Height ;
-            //int totalContentHeight = grpMission.Controls.Cast<Control>().Sum(c => c.Height + 5); // 5 = l’espace entre les contrôles
-            //vScrollBar1.Maximum = Math.Max(0, totalContentHeight - grpMission.Height);
-            //foreach (Control ctrl in grpMission.Controls)
-            //{
-            //    ctrl.Tag = ctrl.Top; // on enregistre la position de base
-            //}
-        }     
         private void pctLeave_Click(object sender, EventArgs e)
         {
             Application.Exit();

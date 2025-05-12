@@ -34,3 +34,5 @@ C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
 C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlMission.dll
 C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlMission.pdb
 >>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlMission.dll
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlMission.pdb
