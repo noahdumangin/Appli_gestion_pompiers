@@ -13,4 +13,24 @@ C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.dll
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.pdb
+<<<<<<< HEAD
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.Volet4.resources
+=======
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\prjPompiers.exe.config
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\prjPompiers.exe
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\prjPompiers.pdb
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\System.Data.SQLite.dll
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlVolet1.dll
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\System.Data.SQLite.xml
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlVolet1.pdb
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.csproj.AssemblyReference.cache
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.Form1.resources
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.Properties.Resources.resources
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.csproj.GenerateResource.cache
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.csproj.CoreCompileInputs.cache
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompi.DDEE856D.Up2Date
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
+C:\Users\darkl\Documents\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlMission.dll
+C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlMission.pdb
+>>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392

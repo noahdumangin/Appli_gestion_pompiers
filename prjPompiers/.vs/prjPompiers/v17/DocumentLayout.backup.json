@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\",
+  "WorkspaceRootPath": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\cours\\pompiers\\prjpompiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,6 +22,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|c:\\users\\darkl\\documents\\pompiers\\prjpompiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:Connexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\mesDatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16BFCFA-370B-4385-BE14-67CD64E06CBD}|prjPompiers.csproj|solutionrelative:mesDatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +51,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -56,16 +78,34 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAwwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T20:32:20.555Z"
-            },
+=======
+          "SelectedChildIndex": 4,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Volet4.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Volet4.cs",
-              "RelativeDocumentMoniker": "Volet4.cs",
-              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Volet4.cs [Design]",
-              "RelativeToolTip": "Volet4.cs [Design]",
+              "Title": "Connexion.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Connexion.cs",
+              "RelativeDocumentMoniker": "Connexion.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Connexion.cs",
+              "RelativeToolTip": "Connexion.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wB0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T08:43:33.874Z",
+              "EditorCaption": ""
+>>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-05-07T20:10:28.251Z"
             },
             {
@@ -77,20 +117,58 @@
               "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAAAYAAAAAuihuXIwgwBwAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:31:00.74Z",
+=======
+              "WhenOpened": "2025-05-11T08:43:33.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "mesDatas.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\mesDatas.cs",
+              "RelativeDocumentMoniker": "mesDatas.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\mesDatas.cs",
+              "RelativeToolTip": "mesDatas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+>>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T08:43:33.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs",
+=======
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Form1.cs",
+>>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAGwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-05-06T14:30:00.171Z"
+=======
+              "WhenOpened": "2025-05-11T08:43:33.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\pompiers\\prjPompiers\\Form1.cs [Design]*",
+              "RelativeToolTip": "Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T08:43:34.792Z",
+              "EditorCaption": " [Design]"
+>>>>>>> bdf27e7ea2ee56410c476c93f3b08abf15412392
             }
           ]
         }
