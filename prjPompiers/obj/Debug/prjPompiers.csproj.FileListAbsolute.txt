@@ -13,3 +13,4 @@ C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.dll
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.pdb
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.Volet4.resources

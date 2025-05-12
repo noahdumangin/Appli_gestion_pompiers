@@ -35,8 +35,8 @@ namespace prjPompiers
             {   
                 Image image = Image.FromFile("C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\bin\\Debug\\girophare.gif");
                 string nom = list[i];
-                Form volet = new Form();
-                UserControlPanel panel = new UserControlPanel(image, nom, volet);
+                Volet4 volet4 = new Volet4();
+                UserControlPanel panel = new UserControlPanel(image, nom, volet4);
                 panel.Name = "panel" + i;
                 panel.BackgroundImage = Image.FromFile("C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\bin\\Debug\\fond-gif.gif");
                 panel.Location = new Point(x,y);
