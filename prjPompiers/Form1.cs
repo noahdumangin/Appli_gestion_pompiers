@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
-using UserControlVolet1;
 using UserControlMissions;
+using System.Reflection;
 
 
 namespace prjPompiers
@@ -17,6 +17,7 @@ namespace prjPompiers
     public partial class Form1 : Form
     {
         private DataSet ds = MesDatas.DsGlobal;
+        UserControlMission mission;
         public Form1()
         {
             InitializeComponent();
@@ -69,13 +70,11 @@ namespace prjPompiers
 
             x = 6;
             y = 100;
-            for(int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
+            for (int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
             {
-                
-                UserControlMission mission = new UserControlMission();
+                UserControlMission mission = new UserControlMission(MesDatas.DsGlobal,i,Connexion.Connec);
                 mission.Name = "panel" + i;
                 mission.Location = new Point(x, y);
-                mission.BackgroundImage = Image.FromFile("fond-gif.gif");
                 panMission.Controls.Add(mission);
                 y += mission.Height ;
             }
@@ -103,17 +102,19 @@ namespace prjPompiers
             
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkBox1.Checked)
+            //{
+            //    for(int i= 0; i< ds.Tables["Mission"].Rows.Count;i++)
+            //    {
 
-        //private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        //{
-        //    int scrollValue = vScrollBar1.Value;
-
-        //    foreach (Control ctrl in grpMission.Controls)
-        //    {
-        //        ctrl.Top = ctrl.Tag is int originalTop
-        //            ? originalTop - scrollValue
-        //            : ctrl.Top - scrollValue; // fallback si Tag non défini
-        //    }
-        //}
+            //        if (ds.Tables["Mission"].Rows[i][5].ToString() = "0")
+            //        {
+            //            panMission.Controls.Remove(mission);
+            //        }
+            //    }
+            //}
+        }
     }
 }

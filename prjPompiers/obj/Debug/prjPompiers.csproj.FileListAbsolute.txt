@@ -11,7 +11,6 @@ C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\System.Data.SQLite
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompi.DDEE856D.Up2Date
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
-C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.dll
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlVolet1.pdb
 <<<<<<< HEAD
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.Volet4.resources

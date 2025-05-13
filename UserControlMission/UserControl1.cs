@@ -7,20 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace UserControlMissions
 {
     public partial class UserControlMission: UserControl
     {
+        private string res;
+        private string nature;
         public UserControlMission()
         {
             InitializeComponent();
         }
 
-        public UserControlMission(DataSet ds)
+        public UserControlMission(DataSet ds,int i, SQLiteConnection connec)
         {
+            try
+            {
+                string chaine = @"Select nom 
+                                  From Caserne 
+                                  Where id ='" + ds.Tables["Mission"].Rows[i][10].ToString() +"'";
+                
+                SQLiteCommand cmd = new SQLiteCommand(chaine,connec);
+                res = cmd.ExecuteScalar().ToString();
+                string chaine2 = @"Select libelle
+                                  From NatureSinistre
+                                  Where id ='" + ds.Tables["Mission"].Rows[i][9].ToString() + "'";
+
+                SQLiteCommand cmdd = new SQLiteCommand(chaine2, connec);
+                nature = cmdd.ExecuteScalar().ToString();
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
             InitializeComponent();
-            pctType.Image = Image.FromFile("");
+            lblID.Text += ds.Tables["Mission"].Rows[i][0].ToString();
+            lblID.ForeColor = Color.Black;
+            lblDate.Text += ds.Tables["Mission"].Rows[i][1].ToString();
+            lblDate.ForeColor = Color.Black;
+            lblCaserne.Text += res;
+            lblCaserne.ForeColor = Color.Black;
+            lblType.Text += nature;
+            lblType.ForeColor = Color.Black;
+            lblResum.Text += ds.Tables["Mission"].Rows[i][3].ToString();
+            lblResum.ForeColor = Color.Black;
+            MessageBox.Show(nature);
+
+            if(nature == "Assistance non urgente")
+            {
+                pctType.Image = Image.FromFile("sirene.gif");
+
+            } else
+            {
+                pctType.Image = Image.FromFile("fond-gif.gif");
+            }
+            pctType.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
 
