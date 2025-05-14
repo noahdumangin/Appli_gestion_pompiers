@@ -51,7 +51,7 @@
             // 
             // pctLeave
             // 
-            this.pctLeave.Location = new System.Drawing.Point(32, 1048);
+            this.pctLeave.Location = new System.Drawing.Point(27, 970);
             this.pctLeave.Name = "pctLeave";
             this.pctLeave.Size = new System.Drawing.Size(112, 108);
             this.pctLeave.TabIndex = 0;
@@ -63,7 +63,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(165, 1092);
+            this.label1.Location = new System.Drawing.Point(170, 1018);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 25);
             this.label1.TabIndex = 1;
@@ -73,9 +73,9 @@
             // 
             this.grbList.Controls.Add(this.label1);
             this.grbList.Controls.Add(this.pctLeave);
-            this.grbList.Location = new System.Drawing.Point(56, 37);
+            this.grbList.Location = new System.Drawing.Point(71, 37);
             this.grbList.Name = "grbList";
-            this.grbList.Size = new System.Drawing.Size(502, 1185);
+            this.grbList.Size = new System.Drawing.Size(430, 1095);
             this.grbList.TabIndex = 1;
             this.grbList.TabStop = false;
             this.grbList.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -85,10 +85,10 @@
             this.panMission.AutoScroll = true;
             this.panMission.Controls.Add(this.checkBox1);
             this.panMission.Controls.Add(this.label2);
-            this.panMission.Location = new System.Drawing.Point(606, 37);
+            this.panMission.Location = new System.Drawing.Point(594, 43);
             this.panMission.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panMission.Name = "panMission";
-            this.panMission.Size = new System.Drawing.Size(1282, 1183);
+            this.panMission.Size = new System.Drawing.Size(1261, 1089);
             this.panMission.TabIndex = 2;
             // 
             // checkBox1

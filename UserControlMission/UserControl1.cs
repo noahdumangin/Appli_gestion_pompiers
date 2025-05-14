@@ -52,7 +52,7 @@ namespace UserControlMissions
             lblType.ForeColor = Color.Black;
             lblResum.Text += ds.Tables["Mission"].Rows[i][3].ToString();
             lblResum.ForeColor = Color.Black;
-            MessageBox.Show(nature);
+            
 
             if(nature == "Assistance non urgente")
             {

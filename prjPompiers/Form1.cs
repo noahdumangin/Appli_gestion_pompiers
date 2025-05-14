@@ -65,7 +65,7 @@ namespace prjPompiers
                 pict.Location = new Point(x,y);
                 pict.Click += new EventHandler(Afficher);
                 grbList.Controls.Add(pict);
-                y+= pict.Height + 20;
+                y+= pict.Height + 50;
             }
 
             x = 6;
