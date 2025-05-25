@@ -85,10 +85,10 @@
             // 
             this.btninfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninfos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btninfos.Location = new System.Drawing.Point(1094, 542);
-            this.btninfos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btninfos.Location = new System.Drawing.Point(729, 352);
+            this.btninfos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btninfos.Name = "btninfos";
-            this.btninfos.Size = new System.Drawing.Size(187, 34);
+            this.btninfos.Size = new System.Drawing.Size(125, 22);
             this.btninfos.TabIndex = 7;
             this.btninfos.Text = "Plus d\'informations";
             this.btninfos.UseVisualStyleBackColor = true;
@@ -107,11 +107,11 @@
             this.grbinfos.Controls.Add(this.lblinfosc);
             this.grbinfos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbinfos.ForeColor = System.Drawing.SystemColors.Control;
-            this.grbinfos.Location = new System.Drawing.Point(484, 583);
-            this.grbinfos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbinfos.Location = new System.Drawing.Point(323, 379);
+            this.grbinfos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grbinfos.Name = "grbinfos";
-            this.grbinfos.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbinfos.Size = new System.Drawing.Size(829, 590);
+            this.grbinfos.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grbinfos.Size = new System.Drawing.Size(553, 384);
             this.grbinfos.TabIndex = 6;
             this.grbinfos.TabStop = false;
             this.grbinfos.Visible = false;
@@ -119,10 +119,10 @@
             // btnjour
             // 
             this.btnjour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnjour.Location = new System.Drawing.Point(610, 532);
-            this.btnjour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnjour.Location = new System.Drawing.Point(407, 346);
+            this.btnjour.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnjour.Name = "btnjour";
-            this.btnjour.Size = new System.Drawing.Size(162, 41);
+            this.btnjour.Size = new System.Drawing.Size(108, 27);
             this.btnjour.TabIndex = 8;
             this.btnjour.Text = "Mettre à jour";
             this.btnjour.UseVisualStyleBackColor = true;
@@ -130,10 +130,10 @@
             // cbconger
             // 
             this.cbconger.AutoSize = true;
-            this.cbconger.Location = new System.Drawing.Point(62, 539);
-            this.cbconger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbconger.Location = new System.Drawing.Point(41, 350);
+            this.cbconger.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbconger.Name = "cbconger";
-            this.cbconger.Size = new System.Drawing.Size(129, 29);
+            this.cbconger.Size = new System.Drawing.Size(87, 21);
             this.cbconger.TabIndex = 7;
             this.cbconger.Text = "En congé";
             this.cbconger.UseVisualStyleBackColor = true;
@@ -141,65 +141,69 @@
             // lsthabilp
             // 
             this.lsthabilp.FormattingEnabled = true;
-            this.lsthabilp.ItemHeight = 25;
-            this.lsthabilp.Location = new System.Drawing.Point(60, 362);
-            this.lsthabilp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lsthabilp.ItemHeight = 17;
+            this.lsthabilp.Location = new System.Drawing.Point(40, 235);
+            this.lsthabilp.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lsthabilp.Name = "lsthabilp";
-            this.lsthabilp.Size = new System.Drawing.Size(739, 129);
+            this.lsthabilp.Size = new System.Drawing.Size(494, 72);
             this.lsthabilp.TabIndex = 6;
             // 
             // lblhabilp
             // 
             this.lblhabilp.AutoSize = true;
-            this.lblhabilp.Location = new System.Drawing.Point(54, 321);
+            this.lblhabilp.Location = new System.Drawing.Point(36, 209);
+            this.lblhabilp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblhabilp.Name = "lblhabilp";
-            this.lblhabilp.Size = new System.Drawing.Size(217, 25);
+            this.lblhabilp.Size = new System.Drawing.Size(142, 17);
             this.lblhabilp.TabIndex = 5;
             this.lblhabilp.Text = "Habilitations passées";
             // 
             // lsthabil
             // 
             this.lsthabil.FormattingEnabled = true;
-            this.lsthabil.ItemHeight = 25;
-            this.lsthabil.Location = new System.Drawing.Point(60, 166);
-            this.lsthabil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lsthabil.ItemHeight = 17;
+            this.lsthabil.Location = new System.Drawing.Point(40, 108);
+            this.lsthabil.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lsthabil.Name = "lsthabil";
-            this.lsthabil.Size = new System.Drawing.Size(736, 129);
+            this.lsthabil.Size = new System.Drawing.Size(492, 72);
             this.lsthabil.TabIndex = 4;
             // 
             // lblhabil
             // 
             this.lblhabil.AutoSize = true;
-            this.lblhabil.Location = new System.Drawing.Point(57, 136);
+            this.lblhabil.Location = new System.Drawing.Point(38, 88);
+            this.lblhabil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblhabil.Name = "lblhabil";
-            this.lblhabil.Size = new System.Drawing.Size(130, 25);
+            this.lblhabil.Size = new System.Drawing.Size(85, 17);
             this.lblhabil.TabIndex = 3;
             this.lblhabil.Text = "Habilitations";
             // 
             // cbocas
             // 
             this.cbocas.FormattingEnabled = true;
-            this.cbocas.Location = new System.Drawing.Point(333, 85);
-            this.cbocas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbocas.Location = new System.Drawing.Point(222, 55);
+            this.cbocas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbocas.Name = "cbocas";
-            this.cbocas.Size = new System.Drawing.Size(136, 33);
+            this.cbocas.Size = new System.Drawing.Size(92, 25);
             this.cbocas.TabIndex = 2;
             // 
             // lblcas
             // 
             this.lblcas.AutoSize = true;
-            this.lblcas.Location = new System.Drawing.Point(57, 85);
+            this.lblcas.Location = new System.Drawing.Point(38, 55);
+            this.lblcas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcas.Name = "lblcas";
-            this.lblcas.Size = new System.Drawing.Size(266, 25);
+            this.lblcas.Size = new System.Drawing.Size(176, 17);
             this.lblcas.TabIndex = 1;
             this.lblcas.Text = "Caserne de rattachement :";
             // 
             // lblinfosc
             // 
             this.lblinfosc.AutoSize = true;
-            this.lblinfosc.Location = new System.Drawing.Point(53, 16);
+            this.lblinfosc.Location = new System.Drawing.Point(35, 10);
+            this.lblinfosc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblinfosc.Name = "lblinfosc";
-            this.lblinfosc.Size = new System.Drawing.Size(208, 25);
+            this.lblinfosc.Size = new System.Drawing.Size(138, 17);
             this.lblinfosc.TabIndex = 0;
             this.lblinfosc.Text = "Informations carrière";
             // 
@@ -218,11 +222,11 @@
             this.grbPompier.Controls.Add(this.lblNomm);
             this.grbPompier.Controls.Add(this.lblNom);
             this.grbPompier.Controls.Add(this.lblMatricule);
-            this.grbPompier.Location = new System.Drawing.Point(484, 13);
-            this.grbPompier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbPompier.Location = new System.Drawing.Point(323, 8);
+            this.grbPompier.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grbPompier.Name = "grbPompier";
-            this.grbPompier.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbPompier.Size = new System.Drawing.Size(829, 522);
+            this.grbPompier.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grbPompier.Size = new System.Drawing.Size(553, 339);
             this.grbPompier.TabIndex = 5;
             this.grbPompier.TabStop = false;
             // 
@@ -231,9 +235,10 @@
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblDate.Location = new System.Drawing.Point(225, 298);
+            this.lblDate.Location = new System.Drawing.Point(150, 194);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(70, 25);
+            this.lblDate.Size = new System.Drawing.Size(46, 17);
             this.lblDate.TabIndex = 11;
             this.lblDate.Text = "label1";
             // 
@@ -242,9 +247,10 @@
             this.lblMoF.AutoSize = true;
             this.lblMoF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoF.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMoF.Location = new System.Drawing.Point(120, 178);
+            this.lblMoF.Location = new System.Drawing.Point(80, 116);
+            this.lblMoF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMoF.Name = "lblMoF";
-            this.lblMoF.Size = new System.Drawing.Size(70, 25);
+            this.lblMoF.Size = new System.Drawing.Size(46, 17);
             this.lblMoF.TabIndex = 10;
             this.lblMoF.Text = "label1";
             // 
@@ -253,9 +259,10 @@
             this.lblPrenom.AutoSize = true;
             this.lblPrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrenom.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPrenom.Location = new System.Drawing.Point(133, 134);
+            this.lblPrenom.Location = new System.Drawing.Point(89, 87);
+            this.lblPrenom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(70, 25);
+            this.lblPrenom.Size = new System.Drawing.Size(46, 17);
             this.lblPrenom.TabIndex = 9;
             this.lblPrenom.Text = "label2";
             // 
@@ -270,11 +277,11 @@
             this.grbCarrier.Controls.Add(this.lblGrade);
             this.grbCarrier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbCarrier.ForeColor = System.Drawing.SystemColors.Control;
-            this.grbCarrier.Location = new System.Drawing.Point(33, 348);
-            this.grbCarrier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbCarrier.Location = new System.Drawing.Point(22, 226);
+            this.grbCarrier.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grbCarrier.Name = "grbCarrier";
-            this.grbCarrier.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbCarrier.Size = new System.Drawing.Size(764, 155);
+            this.grbCarrier.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grbCarrier.Size = new System.Drawing.Size(509, 101);
             this.grbCarrier.TabIndex = 8;
             this.grbCarrier.TabStop = false;
             this.grbCarrier.Text = "Carrière";
@@ -282,28 +289,30 @@
             // lblbipnb
             // 
             this.lblbipnb.AutoSize = true;
-            this.lblbipnb.Location = new System.Drawing.Point(680, 110);
+            this.lblbipnb.Location = new System.Drawing.Point(453, 72);
+            this.lblbipnb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblbipnb.Name = "lblbipnb";
-            this.lblbipnb.Size = new System.Drawing.Size(70, 25);
+            this.lblbipnb.Size = new System.Drawing.Size(46, 17);
             this.lblbipnb.TabIndex = 6;
             this.lblbipnb.Text = "label1";
             // 
             // lblbip
             // 
             this.lblbip.AutoSize = true;
-            this.lblbip.Location = new System.Drawing.Point(623, 110);
+            this.lblbip.Location = new System.Drawing.Point(415, 72);
+            this.lblbip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblbip.Name = "lblbip";
-            this.lblbip.Size = new System.Drawing.Size(55, 25);
+            this.lblbip.Size = new System.Drawing.Size(36, 17);
             this.lblbip.TabIndex = 5;
             this.lblbip.Text = "Bip :";
             // 
             // btnchange
             // 
             this.btnchange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnchange.Location = new System.Drawing.Point(602, 32);
-            this.btnchange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnchange.Location = new System.Drawing.Point(401, 21);
+            this.btnchange.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnchange.Name = "btnchange";
-            this.btnchange.Size = new System.Drawing.Size(118, 45);
+            this.btnchange.Size = new System.Drawing.Size(79, 29);
             this.btnchange.TabIndex = 4;
             this.btnchange.Text = "Changer";
             this.btnchange.UseVisualStyleBackColor = true;
@@ -311,35 +320,38 @@
             // lblnbtel
             // 
             this.lblnbtel.AutoSize = true;
-            this.lblnbtel.Location = new System.Drawing.Point(153, 106);
+            this.lblnbtel.Location = new System.Drawing.Point(102, 69);
+            this.lblnbtel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblnbtel.Name = "lblnbtel";
-            this.lblnbtel.Size = new System.Drawing.Size(70, 25);
+            this.lblnbtel.Size = new System.Drawing.Size(46, 17);
             this.lblnbtel.TabIndex = 3;
             this.lblnbtel.Text = "label2";
             // 
             // txtGrade
             // 
-            this.txtGrade.Location = new System.Drawing.Point(116, 45);
-            this.txtGrade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGrade.Location = new System.Drawing.Point(77, 29);
+            this.txtGrade.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtGrade.Name = "txtGrade";
-            this.txtGrade.Size = new System.Drawing.Size(112, 31);
+            this.txtGrade.Size = new System.Drawing.Size(76, 23);
             this.txtGrade.TabIndex = 2;
             // 
             // lblTelep
             // 
             this.lblTelep.AutoSize = true;
-            this.lblTelep.Location = new System.Drawing.Point(20, 106);
+            this.lblTelep.Location = new System.Drawing.Point(13, 69);
+            this.lblTelep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTelep.Name = "lblTelep";
-            this.lblTelep.Size = new System.Drawing.Size(126, 25);
+            this.lblTelep.Size = new System.Drawing.Size(84, 17);
             this.lblTelep.TabIndex = 1;
             this.lblTelep.Text = "Téléphone :";
             // 
             // lblGrade
             // 
             this.lblGrade.AutoSize = true;
-            this.lblGrade.Location = new System.Drawing.Point(22, 52);
+            this.lblGrade.Location = new System.Drawing.Point(15, 34);
+            this.lblGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(83, 25);
+            this.lblGrade.Size = new System.Drawing.Size(56, 17);
             this.lblGrade.TabIndex = 0;
             this.lblGrade.Text = "Grade :";
             // 
@@ -348,9 +360,10 @@
             this.lblemboche.AutoSize = true;
             this.lblemboche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblemboche.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblemboche.Location = new System.Drawing.Point(28, 298);
+            this.lblemboche.Location = new System.Drawing.Point(19, 194);
+            this.lblemboche.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblemboche.Name = "lblemboche";
-            this.lblemboche.Size = new System.Drawing.Size(191, 25);
+            this.lblemboche.Size = new System.Drawing.Size(127, 17);
             this.lblemboche.TabIndex = 7;
             this.lblemboche.Text = "Date d\'embauche :";
             // 
@@ -359,10 +372,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioButton2.Location = new System.Drawing.Point(270, 232);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton2.Location = new System.Drawing.Point(180, 151);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(168, 29);
+            this.radioButton2.Size = new System.Drawing.Size(112, 21);
             this.radioButton2.TabIndex = 6;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Professionnel";
@@ -373,10 +386,10 @@
             this.rdbVolontaire.AutoSize = true;
             this.rdbVolontaire.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbVolontaire.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbVolontaire.Location = new System.Drawing.Point(53, 232);
-            this.rdbVolontaire.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rdbVolontaire.Location = new System.Drawing.Point(35, 151);
+            this.rdbVolontaire.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rdbVolontaire.Name = "rdbVolontaire";
-            this.rdbVolontaire.Size = new System.Drawing.Size(134, 29);
+            this.rdbVolontaire.Size = new System.Drawing.Size(90, 21);
             this.rdbVolontaire.TabIndex = 5;
             this.rdbVolontaire.TabStop = true;
             this.rdbVolontaire.Text = "Volontaire";
@@ -387,9 +400,10 @@
             this.lblsexe.AutoSize = true;
             this.lblsexe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsexe.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblsexe.Location = new System.Drawing.Point(28, 178);
+            this.lblsexe.Location = new System.Drawing.Point(19, 116);
+            this.lblsexe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblsexe.Name = "lblsexe";
-            this.lblsexe.Size = new System.Drawing.Size(73, 25);
+            this.lblsexe.Size = new System.Drawing.Size(47, 17);
             this.lblsexe.TabIndex = 4;
             this.lblsexe.Text = "Sexe :";
             // 
@@ -398,9 +412,10 @@
             this.lblPrn.AutoSize = true;
             this.lblPrn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrn.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPrn.Location = new System.Drawing.Point(28, 130);
+            this.lblPrn.Location = new System.Drawing.Point(19, 84);
+            this.lblPrn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrn.Name = "lblPrn";
-            this.lblPrn.Size = new System.Drawing.Size(98, 25);
+            this.lblPrn.Size = new System.Drawing.Size(65, 17);
             this.lblPrn.TabIndex = 3;
             this.lblPrn.Text = "Prénom :";
             // 
@@ -409,9 +424,10 @@
             this.lblNomm.AutoSize = true;
             this.lblNomm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomm.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblNomm.Location = new System.Drawing.Point(111, 78);
+            this.lblNomm.Location = new System.Drawing.Point(74, 51);
+            this.lblNomm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNomm.Name = "lblNomm";
-            this.lblNomm.Size = new System.Drawing.Size(70, 25);
+            this.lblNomm.Size = new System.Drawing.Size(46, 17);
             this.lblNomm.TabIndex = 2;
             this.lblNomm.Text = "label1";
             // 
@@ -420,9 +436,10 @@
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNom.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblNom.Location = new System.Drawing.Point(28, 78);
+            this.lblNom.Location = new System.Drawing.Point(19, 51);
+            this.lblNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(68, 25);
+            this.lblNom.Size = new System.Drawing.Size(45, 17);
             this.lblNom.TabIndex = 1;
             this.lblNom.Text = "Nom :";
             // 
@@ -431,9 +448,10 @@
             this.lblMatricule.AutoSize = true;
             this.lblMatricule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatricule.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMatricule.Location = new System.Drawing.Point(266, 22);
+            this.lblMatricule.Location = new System.Drawing.Point(177, 14);
+            this.lblMatricule.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMatricule.Name = "lblMatricule";
-            this.lblMatricule.Size = new System.Drawing.Size(96, 25);
+            this.lblMatricule.Size = new System.Drawing.Size(64, 17);
             this.lblMatricule.TabIndex = 0;
             this.lblMatricule.Text = "aaaaaaa";
             // 
@@ -451,20 +469,20 @@
             this.grbProfil.Controls.Add(this.lblCaserne);
             this.grbProfil.Controls.Add(this.pbGIF);
             this.grbProfil.ForeColor = System.Drawing.Color.White;
-            this.grbProfil.Location = new System.Drawing.Point(12, 13);
-            this.grbProfil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbProfil.Location = new System.Drawing.Point(8, 8);
+            this.grbProfil.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.grbProfil.Name = "grbProfil";
-            this.grbProfil.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbProfil.Size = new System.Drawing.Size(439, 1160);
+            this.grbProfil.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.grbProfil.Size = new System.Drawing.Size(293, 754);
             this.grbProfil.TabIndex = 4;
             this.grbProfil.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(109, 776);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(73, 504);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 185);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 120);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -473,18 +491,19 @@
             this.lblExit.AutoSize = true;
             this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExit.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblExit.Location = new System.Drawing.Point(152, 1056);
+            this.lblExit.Location = new System.Drawing.Point(101, 686);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(262, 25);
+            this.lblExit.Size = new System.Drawing.Size(175, 17);
             this.lblExit.TabIndex = 8;
             this.lblExit.Text = "Retour au tableau de bord";
             // 
             // pbretour
             // 
-            this.pbretour.Location = new System.Drawing.Point(43, 1036);
-            this.pbretour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbretour.Location = new System.Drawing.Point(29, 673);
+            this.pbretour.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pbretour.Name = "pbretour";
-            this.pbretour.Size = new System.Drawing.Size(82, 80);
+            this.pbretour.Size = new System.Drawing.Size(55, 52);
             this.pbretour.TabIndex = 7;
             this.pbretour.TabStop = false;
             // 
@@ -493,28 +512,29 @@
             this.lblnewpomp.AutoSize = true;
             this.lblnewpomp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnewpomp.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblnewpomp.Location = new System.Drawing.Point(152, 672);
+            this.lblnewpomp.Location = new System.Drawing.Point(101, 437);
+            this.lblnewpomp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblnewpomp.Name = "lblnewpomp";
-            this.lblnewpomp.Size = new System.Drawing.Size(279, 25);
+            this.lblnewpomp.Size = new System.Drawing.Size(185, 17);
             this.lblnewpomp.TabIndex = 6;
             this.lblnewpomp.Text = "Ajout d\'un nouveau pompier";
             // 
             // pbajout
             // 
-            this.pbajout.Location = new System.Drawing.Point(43, 644);
-            this.pbajout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbajout.Location = new System.Drawing.Point(29, 419);
+            this.pbajout.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pbajout.Name = "pbajout";
-            this.pbajout.Size = new System.Drawing.Size(80, 88);
+            this.pbajout.Size = new System.Drawing.Size(53, 57);
             this.pbajout.TabIndex = 5;
             this.pbajout.TabStop = false;
             // 
             // cboPompier
             // 
             this.cboPompier.FormattingEnabled = true;
-            this.cboPompier.Location = new System.Drawing.Point(47, 519);
-            this.cboPompier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboPompier.Location = new System.Drawing.Point(31, 337);
+            this.cboPompier.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cboPompier.Name = "cboPompier";
-            this.cboPompier.Size = new System.Drawing.Size(246, 28);
+            this.cboPompier.Size = new System.Drawing.Size(165, 21);
             this.cboPompier.TabIndex = 4;
             // 
             // lblPompier
@@ -522,19 +542,20 @@
             this.lblPompier.AutoSize = true;
             this.lblPompier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPompier.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPompier.Location = new System.Drawing.Point(43, 452);
+            this.lblPompier.Location = new System.Drawing.Point(29, 294);
+            this.lblPompier.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPompier.Name = "lblPompier";
-            this.lblPompier.Size = new System.Drawing.Size(257, 25);
+            this.lblPompier.Size = new System.Drawing.Size(170, 17);
             this.lblPompier.TabIndex = 3;
             this.lblPompier.Text = "Sélectionner un pompier :";
             // 
             // cboCaserne
             // 
             this.cboCaserne.FormattingEnabled = true;
-            this.cboCaserne.Location = new System.Drawing.Point(43, 332);
-            this.cboCaserne.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboCaserne.Location = new System.Drawing.Point(29, 216);
+            this.cboCaserne.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cboCaserne.Name = "cboCaserne";
-            this.cboCaserne.Size = new System.Drawing.Size(250, 28);
+            this.cboCaserne.Size = new System.Drawing.Size(168, 21);
             this.cboCaserne.TabIndex = 2;
             // 
             // lblCaserne
@@ -542,34 +563,37 @@
             this.lblCaserne.AutoSize = true;
             this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCaserne.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblCaserne.Location = new System.Drawing.Point(38, 280);
+            this.lblCaserne.Location = new System.Drawing.Point(25, 182);
+            this.lblCaserne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCaserne.Name = "lblCaserne";
-            this.lblCaserne.Size = new System.Drawing.Size(273, 25);
+            this.lblCaserne.Size = new System.Drawing.Size(180, 17);
             this.lblCaserne.TabIndex = 1;
             this.lblCaserne.Text = "Sélectionnez une caserne :";
             // 
             // pbGIF
             // 
             this.pbGIF.Image = ((System.Drawing.Image)(resources.GetObject("pbGIF.Image")));
-            this.pbGIF.Location = new System.Drawing.Point(123, 41);
-            this.pbGIF.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbGIF.Location = new System.Drawing.Point(82, 27);
+            this.pbGIF.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pbGIF.Name = "pbGIF";
-            this.pbGIF.Size = new System.Drawing.Size(189, 191);
+            this.pbGIF.Size = new System.Drawing.Size(126, 124);
             this.pbGIF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGIF.TabIndex = 0;
             this.pbGIF.TabStop = false;
             // 
             // Volet4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1576, 1170);
+            this.ClientSize = new System.Drawing.Size(1051, 760);
             this.Controls.Add(this.btninfos);
             this.Controls.Add(this.grbinfos);
             this.Controls.Add(this.grbPompier);
             this.Controls.Add(this.grbProfil);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Volet4";
             this.Text = "Volet4";
+            this.Load += new System.EventHandler(this.Volet4_Load);
             this.grbinfos.ResumeLayout(false);
             this.grbinfos.PerformLayout();
             this.grbPompier.ResumeLayout(false);

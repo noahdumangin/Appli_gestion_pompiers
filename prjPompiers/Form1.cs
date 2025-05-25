@@ -116,5 +116,11 @@ namespace prjPompiers
             //    }
             //}
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            volet5 formu = new volet5();
+            DialogResult dr = formu.ShowDialog();
+        }
     }
 }

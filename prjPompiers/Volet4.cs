@@ -16,5 +16,10 @@ namespace prjPompiers
         {
             InitializeComponent();
         }
+
+        private void Volet4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
