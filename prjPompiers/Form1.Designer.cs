@@ -32,13 +32,14 @@
             this.pctLeave = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grbList = new System.Windows.Forms.GroupBox();
-            this.panMission = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.flpMission = new System.Windows.Forms.FlowLayoutPanel();
+            this.chkEnCours = new System.Windows.Forms.CheckBox();
+            this.gpMission = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctFond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLeave)).BeginInit();
             this.grbList.SuspendLayout();
-            this.panMission.SuspendLayout();
+            this.gpMission.SuspendLayout();
             this.SuspendLayout();
             // 
             // pctFond
@@ -78,45 +79,48 @@
             this.grbList.Size = new System.Drawing.Size(430, 1095);
             this.grbList.TabIndex = 1;
             this.grbList.TabStop = false;
-            this.grbList.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // panMission
+            // flpMission
             // 
-            this.panMission.AutoScroll = true;
-            this.panMission.Controls.Add(this.checkBox1);
-            this.panMission.Controls.Add(this.label2);
-            this.panMission.Location = new System.Drawing.Point(594, 43);
-            this.panMission.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panMission.Name = "panMission";
-            this.panMission.Size = new System.Drawing.Size(1261, 1089);
-            this.panMission.TabIndex = 2;
+            this.flpMission.AutoScroll = true;
+            this.flpMission.Location = new System.Drawing.Point(591, 130);
+            this.flpMission.Name = "flpMission";
+            this.flpMission.Size = new System.Drawing.Size(1302, 985);
+            this.flpMission.TabIndex = 2;
             // 
-            // checkBox1
+            // chkEnCours
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1.Location = new System.Drawing.Point(39, 62);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(139, 33);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "En cours ";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.chkEnCours.AutoSize = true;
+            this.chkEnCours.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEnCours.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.chkEnCours.Location = new System.Drawing.Point(86, 35);
+            this.chkEnCours.Name = "chkEnCours";
+            this.chkEnCours.Size = new System.Drawing.Size(192, 33);
+            this.chkEnCours.TabIndex = 0;
+            this.chkEnCours.Text = "Mission en cours ";
+            this.chkEnCours.UseVisualStyleBackColor = true;
+            this.chkEnCours.CheckedChanged += new System.EventHandler(this.chkEnCours_CheckedChanged_1);
+            // 
+            // gpMission
+            // 
+            this.gpMission.Controls.Add(this.label2);
+            this.gpMission.Controls.Add(this.chkEnCours);
+            this.gpMission.Location = new System.Drawing.Point(591, 27);
+            this.gpMission.Name = "gpMission";
+            this.gpMission.Size = new System.Drawing.Size(1302, 97);
+            this.gpMission.TabIndex = 3;
+            this.gpMission.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(315, 37);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(320, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(701, 58);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tableau de bord des Missions ";
+            this.label2.Size = new System.Drawing.Size(598, 62);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tableau de bord des Missions";
             // 
             // Form1
             // 
@@ -125,7 +129,8 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1924, 1170);
-            this.Controls.Add(this.panMission);
+            this.Controls.Add(this.gpMission);
+            this.Controls.Add(this.flpMission);
             this.Controls.Add(this.grbList);
             this.Controls.Add(this.pctFond);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -136,8 +141,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctLeave)).EndInit();
             this.grbList.ResumeLayout(false);
             this.grbList.PerformLayout();
-            this.panMission.ResumeLayout(false);
-            this.panMission.PerformLayout();
+            this.gpMission.ResumeLayout(false);
+            this.gpMission.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -148,8 +153,9 @@
         private System.Windows.Forms.PictureBox pctLeave;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grbList;
-        private System.Windows.Forms.Panel panMission;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.FlowLayoutPanel flpMission;
+        private System.Windows.Forms.CheckBox chkEnCours;
+        private System.Windows.Forms.GroupBox gpMission;
         private System.Windows.Forms.Label label2;
     }
 }

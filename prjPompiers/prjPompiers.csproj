@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -73,11 +74,23 @@
     <Compile Include="Volet4.Designer.cs">
       <DependentUpon>Volet4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Volets2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volets2.Designer.cs">
+      <DependentUpon>Volets2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Volets3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Volets3.Designer.cs">
       <DependentUpon>Volets3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volets5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volets5.Designer.cs">
+      <DependentUpon>Volets5.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

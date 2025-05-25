@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Reflection;
 
 namespace UserControlMissions
 {
@@ -15,13 +16,19 @@ namespace UserControlMissions
     {
         private string res;
         private string nature;
+        private DataSet ds;
+        private int indexMission;
+
         public UserControlMission()
         {
             InitializeComponent();
+            
         }
-
+        
         public UserControlMission(DataSet ds,int i, SQLiteConnection connec)
         {
+            this.ds = ds;
+            this.indexMission = i;
             try
             {
                 string chaine = @"Select nom 
@@ -30,6 +37,7 @@ namespace UserControlMissions
                 
                 SQLiteCommand cmd = new SQLiteCommand(chaine,connec);
                 res = cmd.ExecuteScalar().ToString();
+
                 string chaine2 = @"Select libelle
                                   From NatureSinistre
                                   Where id ='" + ds.Tables["Mission"].Rows[i][9].ToString() + "'";
@@ -63,7 +71,14 @@ namespace UserControlMissions
                 pctType.Image = Image.FromFile("fond-gif.gif");
             }
             pctType.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            pctPDF.Image = Image.FromFile("pdf.png");
+            pctPDF.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctRes.Image = Image.FromFile("image.png");
+            pctRes.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+        public bool enMission()
+        {
+            return ds.Tables["Mission"].Rows[indexMission][7].ToString() == "1";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -77,3 +92,4 @@ namespace UserControlMissions
         }
     }
 }
+"é"

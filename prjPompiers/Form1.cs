@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using UserControlMissions;
 using System.Reflection;
+using Microsoft.VisualBasic;
+
 
 
 namespace prjPompiers
@@ -17,7 +19,6 @@ namespace prjPompiers
     public partial class Form1 : Form
     {
         private DataSet ds = MesDatas.DsGlobal;
-        UserControlMission mission;
         public Form1()
         {
             InitializeComponent();
@@ -58,63 +59,139 @@ namespace prjPompiers
             int y = 20;
             for (int i = 0; i < list.Count; i++)
             {   
-                PictureBox pict = new PictureBox();
+                PictureBox pict = new PictureBox(); 
                 pict.Image = Image.FromFile("girophare.gif");
                 pict.SizeMode = PictureBoxSizeMode.StretchImage;
                 pict.Name = list[i];
+                MessageBox.Show(pict.Name);
                 pict.Location = new Point(x,y);
                 pict.Click += new EventHandler(Afficher);
                 grbList.Controls.Add(pict);
                 y+= pict.Height + 50;
             }
 
-            x = 6;
-            y = 100;
+            AjouteMission();
+        }
+
+        public void AjouteMission()
+        {
+            flpMission.Controls.Clear();
+            int x = 6;
+            int y = 100;
             for (int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
             {
-                UserControlMission mission = new UserControlMission(MesDatas.DsGlobal,i,Connexion.Connec);
+               
+                UserControlMission mission = new UserControlMission(MesDatas.DsGlobal, i, Connexion.Connec);
                 mission.Name = "panel" + i;
                 mission.Location = new Point(x, y);
-                panMission.Controls.Add(mission);
-                y += mission.Height ;
+                flpMission.Controls.Add(mission);
+                y += mission.Height;
             }
-        }    
-        
+        }
         private void Afficher(object sender, EventArgs e)
         {
-            Volet4 form = new Volet4();
-            DialogResult dr = form.ShowDialog();
+            PictureBox clickedPict = sender as PictureBox;
+            if (clickedPict == null) return;
 
-        }
+            // Récupérer le nom pour déterminer quel formulaire ouvrir
+            string name = clickedPict.Name;
+
+            switch (name)
+             {
+                 case "Tableau de bord":
+                    AjouteMission();
+                     break;
+                 case "Nouvelle Mission":
+                     new Volets2().Show();
+                     break;
+                 case "Gestion des engins":
+                     new Volets3().Show();
+                     break;
+                 case "Gestion du personnel":
+                     new Volet4().Show();
+                     break;
+                 case "Statistiques":
+                     new Volets5().Show();
+                     break;
+                 // Ajoute autant de cas que nécessaire
+                 default:
+                     MessageBox.Show("Aucun formulaire associé à cette PictureBox.");
+                     break;
+             }
+         }
 
         private void pctLeave_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void CloturerMission(int idMission)
         {
+            if (ds.Tables["Mission"].Select($"id = {idMission} AND terminee = 0").Length > 0)
+            {
+                // Demander un compte rendu et un s'il y a des réparations à faire avant de faire l'update
+                string compteRendu = Interaction.InputBox("Entrez le compte rendu de la mission :", "Compte Rendu");
+                string reparations = Interaction.InputBox("Entrez les réparations à faire (laisser vide s'il n'y en a pas) :", "Réparations");
+                string dateFin = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // Date de fin de la mission
+                                                                               //requete pour cloturer la mission
 
+                string requete = $"UPDATE Mission SET dateHeureRetour = '{dateFin}', compteRendu = '{compteRendu}',terminee=1 WHERE id = {idMission}";
+                SQLiteConnection cx = Connexion.Connec;
+                DataRow[] rows = ds.Tables["Mission"].Select($"id = {idMission}");
+                if (rows.Length > 0) // Recherche de la ligne à mettre à jour dans la table "Mission"
+                {
+                    DataRow row = rows[0];
+                    row["dateHeureRetour"] = dateFin;
+                    row["compteRendu"] = compteRendu;
+                    row["terminee"] = 1;
+                }
+
+                // Synchronisation avec la base de données
+
+                var adapter = new SQLiteDataAdapter("SELECT * FROM Mission", cx);
+                var builder = new SQLiteCommandBuilder(adapter);
+                adapter.Update(ds, "Mission");
+                SQLiteCommand cmd = new SQLiteCommand(requete, cx);
+                cmd.ExecuteNonQuery(); // Exécuter la requête
+
+                Connexion.FermerConnexion(); // Fermer la connexion
+            }
+            else
+            {
+                MessageBox.Show("La mission est déjà terminée.");
+            }
         }
 
-        private void userControlPanel1_Load(object sender, EventArgs e)
+        private void chkEnCours_CheckedChanged_1(object sender, EventArgs e)
         {
-            
-        }
+            flpMission.Controls.Clear();
+            if (chkEnCours.Checked == true)
+            {
+                for(int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
+                {
+                    int x = 6;
+                    int y = 100;
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            //if (checkBox1.Checked)
-            //{
-            //    for(int i= 0; i< ds.Tables["Mission"].Rows.Count;i++)
-            //    {
+                    UserControlMission mission = new UserControlMission(MesDatas.DsGlobal, i, Connexion.Connec);
+                    mission.Name = "panel" + i;
+                    mission.Location = new Point(x, y);
+                    y += mission.Height;
+                    if (mission.enMission()) {
+                        continue;
+                    }else
+                    {
+                        flpMission.Controls.Add(mission);
+                    }
+                }
+            }
+            else
 
-            //        if (ds.Tables["Mission"].Rows[i][5].ToString() = "0")
-            //        {
-            //            panMission.Controls.Remove(mission);
-            //        }
-            //    }
-            //}
+            {
+                AjouteMission();
+
+            }
+
+
         }
     }
 }

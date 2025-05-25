@@ -16,5 +16,10 @@ namespace prjPompiers
         {
             InitializeComponent();
         }
+
+        private void cboPompier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
