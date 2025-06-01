@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using UserControlMissions;
 using System.Reflection;
+using Microsoft.VisualBasic;
+
 
 
 namespace prjPompiers
@@ -17,7 +19,6 @@ namespace prjPompiers
     public partial class Form1 : Form
     {
         private DataSet ds = MesDatas.DsGlobal;
-        UserControlMission mission;
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +26,6 @@ namespace prjPompiers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Connexion.Connec.State.ToString());
 
             pctFond.Image = Image.FromFile("fond-gif.gif");
             pctFond.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -46,75 +46,122 @@ namespace prjPompiers
                     da.Fill(MesDatas.DsGlobal, nomTable);
                     liste = liste + nomTable + "\n";
                 }
-                MessageBox.Show(liste + "\n" + ds.Tables.Count.ToString());
+                
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
 
-            List<string> list = new List<string> { "Tableau de bord", "Nouvelle Mission", "Gestion des engins", "Gestion du personnel", "Statistiques" };
+            List<string> list = new List<string> {"Tableau de bord", "Nouvelle Mission", "Gestion des engins", "Gestion du personnel", "Statistiques" };
             int x = 18;
             int y = 20;
+            Font LargeFont = new Font("Arial", 12);
             for (int i = 0; i < list.Count; i++)
             {   
                 PictureBox pict = new PictureBox();
+                Label label = new Label();
+                label.Text = list[i].ToString();
+                label.Location = new Point(x+90, y+20);
+                label.ForeColor = Color.Black;
+                label.Font = LargeFont;
+                label.Size = new Size(200, 50);
                 pict.Image = Image.FromFile("girophare.gif");
                 pict.SizeMode = PictureBoxSizeMode.StretchImage;
                 pict.Name = list[i];
+                pict.Cursor = Cursors.Hand;
+                pict.Size = new Size(80, 60);
                 pict.Location = new Point(x,y);
                 pict.Click += new EventHandler(Afficher);
                 grbList.Controls.Add(pict);
+                grbList.Controls.Add(label);
                 y+= pict.Height + 50;
             }
 
-            x = 6;
-            y = 100;
+            AjouteMission();
+        }
+
+        public void AjouteMission()
+        {
+            flpMission.Controls.Clear();
+            int x = 6;
+            int y = 100;
             for (int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
             {
-                UserControlMission mission = new UserControlMission(MesDatas.DsGlobal,i,Connexion.Connec);
+               
+                UserControlMission mission = new UserControlMission(MesDatas.DsGlobal, i, Connexion.Connec);
                 mission.Name = "panel" + i;
                 mission.Location = new Point(x, y);
-                panMission.Controls.Add(mission);
-                y += mission.Height ;
+                flpMission.Controls.Add(mission);
+                y += mission.Height;
             }
-        }    
-        
+        }
         private void Afficher(object sender, EventArgs e)
         {
-            Volet4 form = new Volet4();
-            DialogResult dr = form.ShowDialog();
+            PictureBox clickedPict = sender as PictureBox;
+            if (clickedPict == null) return;
 
-        }
+            string name = clickedPict.Name;
+
+            switch (name)
+             {
+                 case "Tableau de bord":
+                    AjouteMission();
+                     break;
+                 case "Nouvelle Mission":
+                     new Volets2().Show();
+                     break;
+                 case "Gestion des engins":
+                     new Volets3(MesDatas.DsGlobal,Connexion.Connec).Show();
+                     break;
+                 case "Gestion du personnel":
+                     new Volet4().Show();
+                     break;
+                 case "Statistiques":
+                     new Volets5().Show();
+                     break;
+                 // Ajoute autant de cas que nécessaire
+                 default:
+                     MessageBox.Show("Aucun formulaire associé à cette PictureBox.");
+                     break;
+             }
+         }
 
         private void pctLeave_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void chkEnCours_CheckedChanged_1(object sender, EventArgs e)
         {
+            flpMission.Controls.Clear();
+            if (chkEnCours.Checked == true)
+            {
+                for(int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
+                {
+                    int x = 6;
+                    int y = 100;
 
-        }
+                    UserControlMission mission = new UserControlMission(MesDatas.DsGlobal, i, Connexion.Connec);
+                    mission.Name = "panel" + i;
+                    mission.Location = new Point(x, y);
+                    y += mission.Height;
+                    if (mission.enMission()) {
+                        continue;
+                    }else
+                    {
+                        flpMission.Controls.Add(mission);
+                    }
+                }
+            }
+            else
 
-        private void userControlPanel1_Load(object sender, EventArgs e)
-        {
-            
-        }
+            {
+                AjouteMission();
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            //if (checkBox1.Checked)
-            //{
-            //    for(int i= 0; i< ds.Tables["Mission"].Rows.Count;i++)
-            //    {
+            }
 
-            //        if (ds.Tables["Mission"].Rows[i][5].ToString() = "0")
-            //        {
-            //            panMission.Controls.Remove(mission);
-            //        }
-            //    }
-            //}
+
         }
 
         private void button1_Click(object sender, EventArgs e)

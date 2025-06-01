@@ -536,6 +536,7 @@
             this.cboPompier.Name = "cboPompier";
             this.cboPompier.Size = new System.Drawing.Size(165, 21);
             this.cboPompier.TabIndex = 4;
+            //this.cboPompier.SelectedIndexChanged += new System.EventHandler(this.cboPompier_SelectedIndexChanged);
             // 
             // lblPompier
             // 

@@ -17,9 +17,15 @@ namespace prjPompiers
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void Volet4_Load(object sender, EventArgs e)
         {
 
+=======
+        private void cboPompier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+>>>>>>> lucas
         }
     }
 }
