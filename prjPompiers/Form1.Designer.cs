@@ -44,9 +44,9 @@
             // 
             // pctFond
             // 
-            this.pctFond.Location = new System.Drawing.Point(-8, -3);
+            this.pctFond.Location = new System.Drawing.Point(-6, -4);
             this.pctFond.Name = "pctFond";
-            this.pctFond.Size = new System.Drawing.Size(1954, 1243);
+            this.pctFond.Size = new System.Drawing.Size(1952, 1244);
             this.pctFond.TabIndex = 0;
             this.pctFond.TabStop = false;
             // 
@@ -74,18 +74,18 @@
             // 
             this.grbList.Controls.Add(this.label1);
             this.grbList.Controls.Add(this.pctLeave);
-            this.grbList.Location = new System.Drawing.Point(71, 37);
+            this.grbList.Location = new System.Drawing.Point(28, 27);
             this.grbList.Name = "grbList";
-            this.grbList.Size = new System.Drawing.Size(430, 1095);
+            this.grbList.Size = new System.Drawing.Size(490, 1088);
             this.grbList.TabIndex = 1;
             this.grbList.TabStop = false;
             // 
             // flpMission
             // 
             this.flpMission.AutoScroll = true;
-            this.flpMission.Location = new System.Drawing.Point(591, 130);
+            this.flpMission.Location = new System.Drawing.Point(633, 101);
             this.flpMission.Name = "flpMission";
-            this.flpMission.Size = new System.Drawing.Size(1302, 985);
+            this.flpMission.Size = new System.Drawing.Size(1279, 1014);
             this.flpMission.TabIndex = 2;
             // 
             // chkEnCours
@@ -95,9 +95,9 @@
             this.chkEnCours.ForeColor = System.Drawing.SystemColors.ControlText;
             this.chkEnCours.Location = new System.Drawing.Point(86, 35);
             this.chkEnCours.Name = "chkEnCours";
-            this.chkEnCours.Size = new System.Drawing.Size(192, 33);
+            this.chkEnCours.Size = new System.Drawing.Size(202, 33);
             this.chkEnCours.TabIndex = 0;
-            this.chkEnCours.Text = "Mission en cours ";
+            this.chkEnCours.Text = "Missions en cours ";
             this.chkEnCours.UseVisualStyleBackColor = true;
             this.chkEnCours.CheckedChanged += new System.EventHandler(this.chkEnCours_CheckedChanged_1);
             // 
@@ -105,9 +105,9 @@
             // 
             this.gpMission.Controls.Add(this.label2);
             this.gpMission.Controls.Add(this.chkEnCours);
-            this.gpMission.Location = new System.Drawing.Point(591, 27);
+            this.gpMission.Location = new System.Drawing.Point(633, 27);
             this.gpMission.Name = "gpMission";
-            this.gpMission.Size = new System.Drawing.Size(1302, 97);
+            this.gpMission.Size = new System.Drawing.Size(1279, 97);
             this.gpMission.TabIndex = 3;
             this.gpMission.TabStop = false;
             // 
@@ -128,14 +128,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1924, 1170);
+            this.ClientSize = new System.Drawing.Size(1924, 1130);
             this.Controls.Add(this.gpMission);
             this.Controls.Add(this.flpMission);
             this.Controls.Add(this.grbList);
             this.Controls.Add(this.pctFond);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "Form1";
-            this.Text = "Volet1";
+            this.Text = "Tableau de bord";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctFond)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLeave)).EndInit();

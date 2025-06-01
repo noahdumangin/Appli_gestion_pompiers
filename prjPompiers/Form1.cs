@@ -26,7 +26,6 @@ namespace prjPompiers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Connexion.Connec.State.ToString());
 
             pctFond.Image = Image.FromFile("fond-gif.gif");
             pctFond.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -47,26 +46,35 @@ namespace prjPompiers
                     da.Fill(MesDatas.DsGlobal, nomTable);
                     liste = liste + nomTable + "\n";
                 }
-                MessageBox.Show(liste + "\n" + ds.Tables.Count.ToString());
+                
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
 
-            List<string> list = new List<string> { "Tableau de bord", "Nouvelle Mission", "Gestion des engins", "Gestion du personnel", "Statistiques" };
+            List<string> list = new List<string> {"Tableau de bord", "Nouvelle Mission", "Gestion des engins", "Gestion du personnel", "Statistiques" };
             int x = 18;
             int y = 20;
+            Font LargeFont = new Font("Arial", 12);
             for (int i = 0; i < list.Count; i++)
             {   
-                PictureBox pict = new PictureBox(); 
+                PictureBox pict = new PictureBox();
+                Label label = new Label();
+                label.Text = list[i].ToString();
+                label.Location = new Point(x+90, y+20);
+                label.ForeColor = Color.Black;
+                label.Font = LargeFont;
+                label.Size = new Size(200, 50);
                 pict.Image = Image.FromFile("girophare.gif");
                 pict.SizeMode = PictureBoxSizeMode.StretchImage;
                 pict.Name = list[i];
-                MessageBox.Show(pict.Name);
+                pict.Cursor = Cursors.Hand;
+                pict.Size = new Size(80, 60);
                 pict.Location = new Point(x,y);
                 pict.Click += new EventHandler(Afficher);
                 grbList.Controls.Add(pict);
+                grbList.Controls.Add(label);
                 y+= pict.Height + 50;
             }
 
@@ -93,7 +101,6 @@ namespace prjPompiers
             PictureBox clickedPict = sender as PictureBox;
             if (clickedPict == null) return;
 
-            // Récupérer le nom pour déterminer quel formulaire ouvrir
             string name = clickedPict.Name;
 
             switch (name)
@@ -105,7 +112,7 @@ namespace prjPompiers
                      new Volets2().Show();
                      break;
                  case "Gestion des engins":
-                     new Volets3().Show();
+                     new Volets3(MesDatas.DsGlobal,Connexion.Connec).Show();
                      break;
                  case "Gestion du personnel":
                      new Volet4().Show();
@@ -123,43 +130,6 @@ namespace prjPompiers
         private void pctLeave_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void CloturerMission(int idMission)
-        {
-            if (ds.Tables["Mission"].Select($"id = {idMission} AND terminee = 0").Length > 0)
-            {
-                // Demander un compte rendu et un s'il y a des réparations à faire avant de faire l'update
-                string compteRendu = Interaction.InputBox("Entrez le compte rendu de la mission :", "Compte Rendu");
-                string reparations = Interaction.InputBox("Entrez les réparations à faire (laisser vide s'il n'y en a pas) :", "Réparations");
-                string dateFin = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // Date de fin de la mission
-                                                                               //requete pour cloturer la mission
-
-                string requete = $"UPDATE Mission SET dateHeureRetour = '{dateFin}', compteRendu = '{compteRendu}',terminee=1 WHERE id = {idMission}";
-                SQLiteConnection cx = Connexion.Connec;
-                DataRow[] rows = ds.Tables["Mission"].Select($"id = {idMission}");
-                if (rows.Length > 0) // Recherche de la ligne à mettre à jour dans la table "Mission"
-                {
-                    DataRow row = rows[0];
-                    row["dateHeureRetour"] = dateFin;
-                    row["compteRendu"] = compteRendu;
-                    row["terminee"] = 1;
-                }
-
-                // Synchronisation avec la base de données
-
-                var adapter = new SQLiteDataAdapter("SELECT * FROM Mission", cx);
-                var builder = new SQLiteCommandBuilder(adapter);
-                adapter.Update(ds, "Mission");
-                SQLiteCommand cmd = new SQLiteCommand(requete, cx);
-                cmd.ExecuteNonQuery(); // Exécuter la requête
-
-                Connexion.FermerConnexion(); // Fermer la connexion
-            }
-            else
-            {
-                MessageBox.Show("La mission est déjà terminée.");
-            }
         }
 
         private void chkEnCours_CheckedChanged_1(object sender, EventArgs e)

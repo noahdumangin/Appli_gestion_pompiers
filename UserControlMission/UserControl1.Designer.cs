@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pctRes = new System.Windows.Forms.PictureBox();
             this.lblResum = new System.Windows.Forms.Label();
             this.lblType = new System.Windows.Forms.Label();
             this.pctPDF = new System.Windows.Forms.PictureBox();
@@ -36,11 +37,10 @@
             this.lblCaserne = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
-            this.pctRes = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctRes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPDF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctRes)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,6 +61,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // pctRes
+            // 
+            this.pctRes.Location = new System.Drawing.Point(1060, 130);
+            this.pctRes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pctRes.Name = "pctRes";
+            this.pctRes.Size = new System.Drawing.Size(122, 114);
+            this.pctRes.TabIndex = 7;
+            this.pctRes.TabStop = false;
+            this.pctRes.Click += new System.EventHandler(this.pctRes_Click);
             // 
             // lblResum
             // 
@@ -90,6 +100,7 @@
             this.pctPDF.Size = new System.Drawing.Size(122, 114);
             this.pctPDF.TabIndex = 4;
             this.pctPDF.TabStop = false;
+            this.pctPDF.Click += new System.EventHandler(this.pctPDF_Click);
             // 
             // pctType
             // 
@@ -103,7 +114,7 @@
             // lblCaserne
             // 
             this.lblCaserne.AutoSize = true;
-            this.lblCaserne.Location = new System.Drawing.Point(564, 29);
+            this.lblCaserne.Location = new System.Drawing.Point(649, 31);
             this.lblCaserne.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCaserne.Name = "lblCaserne";
             this.lblCaserne.Size = new System.Drawing.Size(81, 20);
@@ -130,15 +141,6 @@
             this.lblID.TabIndex = 0;
             this.lblID.Text = "Id Mission : ";
             // 
-            // pctRes
-            // 
-            this.pctRes.Location = new System.Drawing.Point(1060, 130);
-            this.pctRes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pctRes.Name = "pctRes";
-            this.pctRes.Size = new System.Drawing.Size(122, 114);
-            this.pctRes.TabIndex = 7;
-            this.pctRes.TabStop = false;
-            // 
             // UserControlMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -149,9 +151,9 @@
             this.Size = new System.Drawing.Size(1242, 295);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctRes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPDF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctRes)).EndInit();
             this.ResumeLayout(false);
 
         }
