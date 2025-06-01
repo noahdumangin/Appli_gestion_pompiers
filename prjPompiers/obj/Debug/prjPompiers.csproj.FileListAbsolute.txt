@@ -36,7 +36,6 @@ C:\Users\darkl\Documents\pompiers\prjPompiers\bin\Debug\UserControlMission.pdb
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlMission.dll
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\UserControlMission.pdb
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.Volets3.resources
-<<<<<<< HEAD
 \\vfiler-ad-etu.ad.unistra.fr\HOME\Documents\pompiers\pompiers\prjPompiers\obj\Debug\prjPompiers.csproj.AssemblyReference.cache
 \\vfiler-ad-etu.ad.unistra.fr\HOME\Documents\pompiers\pompiers\prjPompiers\obj\Debug\prjPompiers.Form1.resources
 \\vfiler-ad-etu.ad.unistra.fr\HOME\Documents\pompiers\pompiers\prjPompiers\obj\Debug\prjPompiers.volet5.resources
@@ -76,7 +75,6 @@ C:\Users\noahd\Documents\S2\SAE_A21\pompiers\prjPompiers\obj\Debug\prjPompiers.c
 C:\Users\noahd\Documents\S2\SAE_A21\pompiers\prjPompiers\obj\Debug\prjPompi.DDEE856D.Up2Date
 C:\Users\noahd\Documents\S2\SAE_A21\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
 C:\Users\noahd\Documents\S2\SAE_A21\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
-=======
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\PdfSharp.dll
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\PdfSharp.Shared.dll
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\PdfSharp.System.dll
@@ -99,3 +97,4 @@ C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\System.Numerics.Ve
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\System.Buffers.xml
 C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\bin\Debug\de\PdfSharp.resources.dll
 >>>>>>> lucas
+C:\Users\darkl\Documents\Cours\pompiers\prjPompiers\obj\Debug\prjPompiers.volet5.resources

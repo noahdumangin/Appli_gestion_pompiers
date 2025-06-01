@@ -42,20 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "volet5.cs",
-              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\volet5.cs",
-              "RelativeDocumentMoniker": "volet5.cs",
-              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\volet5.cs",
-              "RelativeToolTip": "volet5.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAmwHYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2025-05-25T15:03:23.081Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -64,8 +52,9 @@
               "RelativeDocumentMoniker": "volet5.cs",
               "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\volet5.cs [Design]",
               "RelativeToolTip": "volet5.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2025-05-25T15:00:00.539Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T15:00:00.539Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -121,9 +110,22 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAowHoAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwHoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T14:31:00.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "volet5.cs",
+              "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\volet5.cs",
+              "RelativeDocumentMoniker": "volet5.cs",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\prjPompiers\\volet5.cs",
+              "RelativeToolTip": "volet5.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T15:03:23.081Z",
               "EditorCaption": ""
             },
             {
