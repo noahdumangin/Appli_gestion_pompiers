@@ -334,7 +334,7 @@ namespace prjPompiers
                 lbl.Font = new Font("Microsoft Sans Serif", 12);
                 lbl.Location = new Point(10, y);
 
-                panel1.Controls.Add(lbl);
+                panel2.Controls.Add(lbl);
                 y += 30;
             }
 
