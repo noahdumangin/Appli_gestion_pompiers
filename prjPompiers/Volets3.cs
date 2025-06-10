@@ -72,7 +72,7 @@ namespace prjPompiers
         public void remplirFormulaire(int currentIndex)
         {   
             lblNom.Text = "Numéro du véhicule : " + ds.Tables["Engin"].Rows[currentIndex][0].ToString() + "-" + ds.Tables["Engin"].Rows[currentIndex][1].ToString() + "-" + ds.Tables["Engin"].Rows[currentIndex][2].ToString();
-            lblDate.Text = "Date de reception :" + ds.Tables["Engin"].Rows[currentIndex][3].ToString();
+            lblDate.Text = "Date de reception : " + ds.Tables["Engin"].Rows[currentIndex][3].ToString();
             if (ds.Tables["Engin"].Rows[currentIndex][4].ToString() == "1")
             {
                chkboxMission.Checked = true;
