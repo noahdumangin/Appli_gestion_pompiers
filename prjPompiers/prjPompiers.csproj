@@ -122,6 +122,9 @@
     <EmbeddedResource Include="Volets3.resx">
       <DependentUpon>Volets3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Volets5.resx">
+      <DependentUpon>Volets5.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
