@@ -80,3 +80,4 @@ C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPomp
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompi.DDEE856D.Up2Date
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.exe
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.pdb
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.Volets2.resources
