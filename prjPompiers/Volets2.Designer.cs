@@ -45,6 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_ajout_mission = new System.Windows.Forms.Button();
             this.grp_equipe_choisie = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpEnTete = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbladresse = new System.Windows.Forms.Label();
@@ -59,9 +61,12 @@
             this.btn_mobilisation = new System.Windows.Forms.Button();
             this.lbl_type = new System.Windows.Forms.Label();
             this.grp_sinistre = new System.Windows.Forms.GroupBox();
+            this.panelEngin = new System.Windows.Forms.Panel();
+            this.panelPompier = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif1)).BeginInit();
+            this.grp_equipe_choisie.SuspendLayout();
             this.grpEnTete.SuspendLayout();
             this.grp_infos_sinistre.SuspendLayout();
             this.grp_sinistre.SuspendLayout();
@@ -231,6 +236,10 @@
             // 
             this.grp_equipe_choisie.AutoSize = true;
             this.grp_equipe_choisie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.grp_equipe_choisie.Controls.Add(this.panelPompier);
+            this.grp_equipe_choisie.Controls.Add(this.panelEngin);
+            this.grp_equipe_choisie.Controls.Add(this.label2);
+            this.grp_equipe_choisie.Controls.Add(this.label1);
             this.grp_equipe_choisie.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.grp_equipe_choisie.ForeColor = System.Drawing.Color.White;
             this.grp_equipe_choisie.Location = new System.Drawing.Point(13, 513);
@@ -241,6 +250,25 @@
             this.grp_equipe_choisie.TabIndex = 23;
             this.grp_equipe_choisie.TabStop = false;
             this.grp_equipe_choisie.Text = "Mobilisation";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1408, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Pompiers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(380, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Engins";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // grpEnTete
             // 
@@ -423,6 +451,20 @@
             this.grp_sinistre.TabStop = false;
             this.grp_sinistre.Text = "Informations sur le sinistre";
             // 
+            // panelEngin
+            // 
+            this.panelEngin.Location = new System.Drawing.Point(23, 103);
+            this.panelEngin.Name = "panelEngin";
+            this.panelEngin.Size = new System.Drawing.Size(871, 367);
+            this.panelEngin.TabIndex = 4;
+            // 
+            // panelPompier
+            // 
+            this.panelPompier.Location = new System.Drawing.Point(974, 103);
+            this.panelPompier.Name = "panelPompier";
+            this.panelPompier.Size = new System.Drawing.Size(970, 367);
+            this.panelPompier.TabIndex = 5;
+            // 
             // Volets2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -441,6 +483,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbgif3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif1)).EndInit();
+            this.grp_equipe_choisie.ResumeLayout(false);
+            this.grp_equipe_choisie.PerformLayout();
             this.grpEnTete.ResumeLayout(false);
             this.grpEnTete.PerformLayout();
             this.grp_infos_sinistre.ResumeLayout(false);
@@ -484,5 +528,9 @@
         private System.Windows.Forms.Button btn_mobilisation;
         private System.Windows.Forms.Label lbl_type;
         private System.Windows.Forms.GroupBox grp_sinistre;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelPompier;
+        private System.Windows.Forms.Panel panelEngin;
     }
 }

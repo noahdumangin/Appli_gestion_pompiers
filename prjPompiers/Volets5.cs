@@ -16,8 +16,7 @@ namespace prjPompiers
     public partial class Volets5 : Form
     {
         //affichage des usercontrols
-        volet5 uc = new volet5();
-        volet5 uc1 = new volet5();
+        private DataTable data;
         public Volets5()
         {
             InitializeComponent();
@@ -30,17 +29,8 @@ namespace prjPompiers
             this.WindowState = FormWindowState.Maximized;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             lblPlusutilise.Visible = false;
-
-            //usercontrols
-            uc.Top = 40;
-            uc.Left = 20;
-            uc.Height = 100;
-            uc.Width = 450;
-            uc1.Top = 40;
-            uc1.Left = 20;
-            uc1.Height = 110;
-            this.grpStat1caserne.Controls.Add(uc);
-            this.grpEnsembleCaserne.Controls.Add(uc1);
+            panel1.AutoScroll = true;
+            panel2.AutoScroll = true;
 
 
             //charger la cbo pour choisir la caserne
@@ -89,7 +79,8 @@ namespace prjPompiers
 
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                uc.majdonnee(dt);
+                this.majdonnee1(dt);
+                
             }
             catch (Exception error)
             {
@@ -187,7 +178,8 @@ namespace prjPompiers
 
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    uc1.majdonnee(dt);
+                    this.majdonnee2(dt);
+                    
                 }
                 else if (choix == 2)
                 {
@@ -203,7 +195,7 @@ namespace prjPompiers
 
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    uc1.majdonnee(dt);
+                    this.majdonnee2(dt);
                 }
                 else if (choix == 3)
                 {
@@ -277,7 +269,8 @@ namespace prjPompiers
 
             DataTable dtable = new DataTable();
             dadapt.Fill(dtable);
-            uc1.majdonnee(dtable);
+            this.majdonnee2(dtable);
+
             // Vérifie si aucun pompier
             bool aucunPompier = true;
             foreach (DataRow row in dtable.Rows)
@@ -299,5 +292,53 @@ namespace prjPompiers
         {
             this.Close();
         }
+        
+        public void majdonnee1(DataTable table)
+        {
+            panel1.Controls.Clear(); // Nettoyer le panel avant d'ajouter les nouvelles données
+
+            int y = 20; // Position verticale de départ
+
+            foreach (DataRow ligne in table.Rows)
+            {
+                Label lbl = new Label();
+                lbl.AutoSize = true;
+
+                // Construire dynamiquement le texte à afficher
+                string texteAffichage = string.Join(" - ", ligne.ItemArray.Select(item => item.ToString()));
+
+                lbl.Text = texteAffichage;
+                lbl.Font = new Font("Microsoft Sans Serif", 12);
+                lbl.Location = new Point(10, y);
+
+                panel1.Controls.Add(lbl);
+                y += 30;
+            }
+
+        }
+        public void majdonnee2(DataTable table)
+        {
+            panel2.Controls.Clear(); // Nettoyer le panel avant d'ajouter les nouvelles données
+
+            int y = 20; // Position verticale de départ
+
+            foreach (DataRow ligne in table.Rows)
+            {
+                Label lbl = new Label();
+                lbl.AutoSize = true;
+
+                // Construire dynamiquement le texte à afficher
+                string texteAffichage = string.Join(" - ", ligne.ItemArray.Select(item => item.ToString()));
+
+                lbl.Text = texteAffichage;
+                lbl.Font = new Font("Microsoft Sans Serif", 12);
+                lbl.Location = new Point(10, y);
+
+                panel1.Controls.Add(lbl);
+                y += 30;
+            }
+
+        }
     }
 }
+

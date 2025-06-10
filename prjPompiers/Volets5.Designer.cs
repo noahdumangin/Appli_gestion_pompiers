@@ -42,6 +42,8 @@
             this.lblAffichage = new System.Windows.Forms.Label();
             this.cboPartie2 = new System.Windows.Forms.ComboBox();
             this.btnfermer = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.grpTitre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbgif)).BeginInit();
@@ -100,6 +102,7 @@
             // grpStat1caserne
             // 
             this.grpStat1caserne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.grpStat1caserne.Controls.Add(this.panel1);
             this.grpStat1caserne.Controls.Add(this.lblNombre);
             this.grpStat1caserne.Controls.Add(this.lblEngin);
             this.grpStat1caserne.Controls.Add(this.lblPlusutilise);
@@ -171,6 +174,7 @@
             // grpEnsembleCaserne
             // 
             this.grpEnsembleCaserne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.grpEnsembleCaserne.Controls.Add(this.panel2);
             this.grpEnsembleCaserne.Controls.Add(this.lblAffichage);
             this.grpEnsembleCaserne.Controls.Add(this.cboPartie2);
             this.grpEnsembleCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
@@ -218,6 +222,20 @@
             this.btnfermer.UseVisualStyleBackColor = false;
             this.btnfermer.Click += new System.EventHandler(this.btnfermer_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(37, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1228, 271);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(32, 82);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1868, 276);
+            this.panel2.TabIndex = 3;
+            // 
             // Volets5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,5 +276,7 @@
         private System.Windows.Forms.Label lblAffichage;
         private System.Windows.Forms.ComboBox cboPartie2;
         private System.Windows.Forms.Button btnfermer;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

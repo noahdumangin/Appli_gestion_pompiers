@@ -8,13 +8,13 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using affichage_affectations;
+//using affichage_affectations;
 
 namespace prjPompiers
 {
     public partial class Volets2 : Form
     {
-        affichage_affectation uc = new affichage_affectation();
+        //affichage_affectation uc = new affichage_affectation();
 
         private DataTable dtEngins;
         private DataTable dtPompiers;
@@ -39,6 +39,10 @@ namespace prjPompiers
             this.WindowState = FormWindowState.Maximized;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             txt_raison.Focus();
+            panelEngin.AutoScroll = true;
+            panelPompier.AutoScroll = true;
+
+
 
             pbgif1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbgif2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -380,6 +384,7 @@ namespace prjPompiers
                 pompiersAffichage.Columns.Add("nom");
                 pompiersAffichage.Columns.Add("prenom");
                 pompiersAffichage.Columns.Add("Habilitation");
+
                 foreach (DataRow lignepompier in pompiersSelectionne.Rows)
                 {
                     string matricule = lignepompier["matriculePompier"].ToString();
@@ -406,9 +411,60 @@ namespace prjPompiers
                     // On ajoute la ligne complète dans le nouveau DataTable
                     pompiersAffichage.Rows.Add(matricule, nom, prenom, habilitation);
                 }
-                grp_equipe_choisie.Controls.Add(uc);
-                uc.majdonnee(enginsAffichage, pompiersAffichage, idCaserne);
+                this.majdonnee(enginsAffichage, pompiersAffichage);
+               /*grp_equipe_choisie.Controls.Add(uc);
+                uc.majdonnee(enginsAffichage, pompiersAffichage, idCaserne);*/
             }
+            }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void majdonnee(DataTable engins, DataTable pompiers)
+        {
+            panelEngin.Controls.Clear();
+            panelPompier.Controls.Clear();
+
+            int y = 20;
+
+            // Afficher les engins dans grpboxEngin
+            foreach (DataRow ligne in engins.Rows)
+            {
+                Label lbl = new Label();
+                lbl.AutoSize = true;
+
+                string code = ligne["codeTypeEngin"].ToString();
+                string nom = ligne["nom"].ToString();
+                string numero = "n°" + ligne["numero"].ToString();
+
+                lbl.Text = $"{code}    ·    {nom}    ·    {numero}";
+                lbl.Font = new Font("Microsoft Sans Serif", 15);
+                lbl.Location = new Point(10, y);
+
+                panelEngin.Controls.Add(lbl);
+                y += 30;
+            }
+
+            // Afficher les pompiers dans grpboxPompier
+            y = 20;
+            foreach (DataRow ligne in pompiers.Rows)
+            {
+                Label lbl = new Label();
+                lbl.AutoSize = true;
+
+                string matricule = ligne["matricule"].ToString();
+                string nom = ligne["nom"].ToString();
+                string prenom = ligne["prenom"].ToString();
+                string habilitation = ligne["Habilitation"].ToString();
+
+                lbl.Text = $"{matricule}    ·    {nom} {prenom}    ·    {habilitation}";
+                lbl.Font = new Font("Microsoft Sans Serif", 15);
+                lbl.Location = new Point(10, y);
+
+                panelPompier.Controls.Add(lbl);
+                y += 30;
             }
         }
+    }
 }

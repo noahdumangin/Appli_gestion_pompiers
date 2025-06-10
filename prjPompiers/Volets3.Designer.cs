@@ -37,8 +37,8 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.chkboxMission = new System.Windows.Forms.CheckBox();
             this.chkboxPanne = new System.Windows.Forms.CheckBox();
-            this.btnclose = new System.Windows.Forms.Button();
             this.gdvVROUMVROUM = new System.Windows.Forms.DataGridView();
+            this.btnclose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctboxVROUMVROUM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvVROUMVROUM)).BeginInit();
             this.SuspendLayout();
@@ -152,30 +152,29 @@
             this.chkboxPanne.Text = "En Panne";
             this.chkboxPanne.UseVisualStyleBackColor = true;
             // 
+            // gdvVROUMVROUM
+            // 
+            this.gdvVROUMVROUM.BackgroundColor = System.Drawing.Color.White;
+            this.gdvVROUMVROUM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdvVROUMVROUM.Location = new System.Drawing.Point(698, 559);
+            this.gdvVROUMVROUM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gdvVROUMVROUM.Name = "gdvVROUMVROUM";
+            this.gdvVROUMVROUM.RowHeadersWidth = 62;
+            this.gdvVROUMVROUM.RowTemplate.Height = 28;
+            this.gdvVROUMVROUM.Size = new System.Drawing.Size(10, 10);
+            this.gdvVROUMVROUM.TabIndex = 12;
+            // 
             // btnclose
             // 
             this.btnclose.DialogResult = System.Windows.Forms.DialogResult.Retry;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.btnclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
-            this.btnclose.Location = new System.Drawing.Point(689, 546);
+            this.btnclose.Location = new System.Drawing.Point(667, 546);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(447, 39);
-            this.btnclose.TabIndex = 11;
+            this.btnclose.TabIndex = 13;
             this.btnclose.Text = "revenir au tableau de bord";
             this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // gdvVROUMVROUM
-            // 
-            this.gdvVROUMVROUM.BackgroundColor = System.Drawing.Color.White;
-            this.gdvVROUMVROUM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gdvVROUMVROUM.Location = new System.Drawing.Point(668, 52);
-            this.gdvVROUMVROUM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gdvVROUMVROUM.Name = "gdvVROUMVROUM";
-            this.gdvVROUMVROUM.RowHeadersWidth = 62;
-            this.gdvVROUMVROUM.RowTemplate.Height = 28;
-            this.gdvVROUMVROUM.Size = new System.Drawing.Size(458, 251);
-            this.gdvVROUMVROUM.TabIndex = 12;
             // 
             // Volets3
             // 
@@ -183,8 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(1148, 597);
-            this.Controls.Add(this.gdvVROUMVROUM);
             this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.gdvVROUMVROUM);
             this.Controls.Add(this.chkboxPanne);
             this.Controls.Add(this.chkboxMission);
             this.Controls.Add(this.lblDate);
@@ -217,7 +216,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.CheckBox chkboxMission;
         private System.Windows.Forms.CheckBox chkboxPanne;
-        private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.DataGridView gdvVROUMVROUM;
+        private System.Windows.Forms.Button btnclose;
     }
 }
