@@ -237,7 +237,7 @@
             this.grp_equipe_choisie.Margin = new System.Windows.Forms.Padding(4);
             this.grp_equipe_choisie.Name = "grp_equipe_choisie";
             this.grp_equipe_choisie.Padding = new System.Windows.Forms.Padding(4);
-            this.grp_equipe_choisie.Size = new System.Drawing.Size(1981, 513);
+            this.grp_equipe_choisie.Size = new System.Drawing.Size(1985, 522);
             this.grp_equipe_choisie.TabIndex = 23;
             this.grp_equipe_choisie.TabStop = false;
             this.grp_equipe_choisie.Text = "Mobilisation";
@@ -390,6 +390,7 @@
             this.btn_mobilisation.TabIndex = 10;
             this.btn_mobilisation.Text = "Simulation de mobilisation";
             this.btn_mobilisation.UseVisualStyleBackColor = false;
+            this.btn_mobilisation.Click += new System.EventHandler(this.btn_mobilisation_Click_1);
             // 
             // lbl_type
             // 

@@ -8,14 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using affichage;
+
 
 namespace prjPompiers
 {
-    //affichage des usercontrols
-    //affichagevolet5 uc = new affichagevolet5();
-    //affichagevolet5 uc1 = new affichagevolet5();
     public partial class Volets5 : Form
     {
+        //affichage des usercontrols
+        volet5 uc = new volet5();
+        volet5 uc1 = new volet5();
         public Volets5()
         {
             InitializeComponent();
@@ -30,13 +32,15 @@ namespace prjPompiers
             lblPlusutilise.Visible = false;
 
             //usercontrols
-            /*uc.Top = 80;
+            uc.Top = 40;
             uc.Left = 20;
-            uc1.Top = 80;
+            uc.Height = 100;
+            uc.Width = 450;
+            uc1.Top = 40;
             uc1.Left = 20;
-            uc1.Height = 1000;
-            grpStat1caserne.Controls.Add(uc);
-            grpEnsembleCaserne.Controls.Add(uc1);*/
+            uc1.Height = 110;
+            this.grpStat1caserne.Controls.Add(uc);
+            this.grpEnsembleCaserne.Controls.Add(uc1);
 
 
             //charger la cbo pour choisir la caserne
@@ -85,7 +89,7 @@ namespace prjPompiers
 
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                //uc.majdonnee(dt);
+                uc.majdonnee(dt);
             }
             catch (Exception error)
             {
@@ -183,7 +187,7 @@ namespace prjPompiers
 
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    //uc1.majdonnee(dt);
+                    uc1.majdonnee(dt);
                 }
                 else if (choix == 2)
                 {
@@ -199,7 +203,7 @@ namespace prjPompiers
 
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    //uc1.majdonnee(dt);
+                    uc1.majdonnee(dt);
                 }
                 else if (choix == 3)
                 {
@@ -273,7 +277,7 @@ namespace prjPompiers
 
             DataTable dtable = new DataTable();
             dadapt.Fill(dtable);
-            //uc1.majdonnee(dtable);
+            uc1.majdonnee(dtable);
             // Vérifie si aucun pompier
             bool aucunPompier = true;
             foreach (DataRow row in dtable.Rows)

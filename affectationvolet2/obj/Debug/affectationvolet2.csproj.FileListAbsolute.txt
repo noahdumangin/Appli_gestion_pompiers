@@ -1,0 +1,8 @@
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\bin\Debug\affectationvolet2.dll
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\bin\Debug\affectationvolet2.pdb
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\obj\Debug\affectationvolet2.csproj.AssemblyReference.cache
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\obj\Debug\affectationvolet2.affichage_affectation.resources
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\obj\Debug\affectationvolet2.csproj.GenerateResource.cache
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\obj\Debug\affectationvolet2.csproj.CoreCompileInputs.cache
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\obj\Debug\affectationvolet2.dll
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\affectationvolet2\obj\Debug\affectationvolet2.pdb

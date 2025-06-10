@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\noahd\\Documents\\S2\\SAE_A21\\lucas\\pompiers\\affectationvolet2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29A26E47-949D-46E0-977E-610EA010E10C}|affectationvolet2.csproj|c:\\users\\noahd\\documents\\s2\\sae_a21\\lucas\\pompiers\\affectationvolet2\\affectation_mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29A26E47-949D-46E0-977E-610EA010E10C}|affectationvolet2.csproj|solutionrelative:affectation_mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29A26E47-949D-46E0-977E-610EA010E10C}|affectationvolet2.csproj|C:\\Users\\noahd\\Documents\\S2\\SAE_A21\\lucas\\pompiers\\affectationvolet2\\affectation_mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{29A26E47-949D-46E0-977E-610EA010E10C}|affectationvolet2.csproj|solutionrelative:affectation_mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "affectation_mission.cs",
+              "DocumentMoniker": "C:\\Users\\noahd\\Documents\\S2\\SAE_A21\\lucas\\pompiers\\affectationvolet2\\affectation_mission.cs",
+              "RelativeDocumentMoniker": "affectation_mission.cs",
+              "ToolTip": "C:\\Users\\noahd\\Documents\\S2\\SAE_A21\\lucas\\pompiers\\affectationvolet2\\affectation_mission.cs",
+              "RelativeToolTip": "affectation_mission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:41:17.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "affectation_mission.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\noahd\\Documents\\S2\\SAE_A21\\lucas\\pompiers\\affectationvolet2\\affectation_mission.cs",
+              "RelativeDocumentMoniker": "affectation_mission.cs",
+              "ToolTip": "C:\\Users\\noahd\\Documents\\S2\\SAE_A21\\lucas\\pompiers\\affectationvolet2\\affectation_mission.cs [Design]",
+              "RelativeToolTip": "affectation_mission.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:40:24.469Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

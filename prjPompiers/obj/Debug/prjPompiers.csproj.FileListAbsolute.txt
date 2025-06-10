@@ -85,3 +85,7 @@ C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPomp
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.Volets5.resources
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.Login.resources
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.nouveaupompier.resources
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\bin\Debug\affichagevolet5.pdb
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\affectationvolet2.affichage_affectation.resources
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\affichage.volet5.resources
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\bin\Debug\affectationvolet2.pdb

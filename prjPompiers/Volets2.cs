@@ -8,12 +8,13 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using affichage_affectations;
 
 namespace prjPompiers
 {
     public partial class Volets2 : Form
     {
-        //affichage_affectation uc = new affichage_affectation();
+        affichage_affectation uc = new affichage_affectation();
 
         private DataTable dtEngins;
         private DataTable dtPompiers;
@@ -214,7 +215,84 @@ namespace prjPompiers
             return dtPompiersChoisis;
         }
 
-        private async Task btn_mobilisation_ClickAsync(object sender, EventArgs e)
+        private async void btn_mobilisation_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void btn_ajout_mission_Click(object sender, EventArgs e)
+        {
+            //récupération de certaines données
+            int idMission = Convert.ToInt32(lbl_num_mission.Text);
+            string date = lbl_date.Text + " " + lbl_heure.Text;
+            int idSinistre = Convert.ToInt32(cbo_sinistre.SelectedValue);
+            int idCaserne = Convert.ToInt32(cbo_caserne.SelectedValue);
+
+            //table Mission
+            dtMission = MesDatas.DsGlobal.Tables["Mission"];
+
+            DataRow nouvelleMission = dtMission.NewRow();
+            nouvelleMission["id"] = idMission;
+            nouvelleMission["dateHeureDepart"] = date;
+            nouvelleMission["motifAppel"] = txt_raison.Text;
+            nouvelleMission["adresse"] = txt_rue.Text;
+            nouvelleMission["cp"] = txt_cp.Text;
+            nouvelleMission["ville"] = txt_ville.Text;
+            nouvelleMission["terminee"] = 0;
+            nouvelleMission["idNatureSinistre"] = idSinistre;
+            nouvelleMission["idCaserne"] = idCaserne;
+            dtMission.Rows.Add(nouvelleMission);
+
+            //table engin
+            dtEngins = MesDatas.DsGlobal.Tables["Engin"];
+            foreach (DataRow engin in enginsSelectionne.Rows)
+            {
+                DataRow[] ligne = dtEngins.Select($"numero = {engin["numero"]} AND codeTypeEngin = '{engin["codeTypeEngin"]}' AND idCaserne = {idCaserne}");
+                if (ligne.Length > 0)
+                {
+                    ligne[0]["enMission"] = 1;
+                }
+            }
+
+            //table pompier
+            dtPompiers = MesDatas.DsGlobal.Tables["Pompier"];
+            foreach (DataRow lignepompier in pompiersSelectionne.Rows)
+            {
+                string matricule = lignepompier["matriculePompier"].ToString();
+                DataRow[] ligne = dtPompiers.Select($"matricule = '{matricule}'");
+                if (ligne.Length > 0)
+                {
+                    ligne[0]["enMission"] = 1;
+                }
+            }
+
+            //table PartirAvec
+            dtPartirAvec = MesDatas.DsGlobal.Tables["PartirAvec"];
+            foreach (DataRow engin in enginsSelectionne.Rows)
+            {
+                DataRow newPartir = dtPartirAvec.NewRow();
+                newPartir["idCaserne"] = idCaserne;
+                newPartir["codeTypeEngin"] = engin["codeTypeEngin"];
+                newPartir["numeroEngin"] = engin["numero"];
+                newPartir["idMission"] = idMission;
+                newPartir["reparationsEventuelles"] = DBNull.Value;
+                dtPartirAvec.Rows.Add(newPartir);
+            }
+
+            //table mobiliser
+            dtMobiliser = MesDatas.DsGlobal.Tables["Mobiliser"];
+            foreach (DataRow pompier in pompiersSelectionne.Rows)
+            {
+                DataRow newMobiliser = dtMobiliser.NewRow();
+                newMobiliser["matriculePompier"] = pompier["matriculePompier"];
+                newMobiliser["idMission"] = idMission;
+                newMobiliser["idHabilitation"] = pompier["idHabilitation"];
+                dtMobiliser.Rows.Add(newMobiliser);
+            }
+        }
+
+        private async void btn_mobilisation_Click_1(object sender, EventArgs e)
         {
             //pour pouvoir cliquer sur le bouton "simulation de mission" il faut que tout soit rempli
             if (string.IsNullOrWhiteSpace(txt_raison.Text) || string.IsNullOrWhiteSpace(txt_rue.Text) ||
@@ -328,80 +406,9 @@ namespace prjPompiers
                     // On ajoute la ligne complète dans le nouveau DataTable
                     pompiersAffichage.Rows.Add(matricule, nom, prenom, habilitation);
                 }
-                //grp_equipe_choisie.Controls.Add(uc);
-                //uc.majdonnee(enginsAffichage, pompiersAffichage, idCaserne);
+                grp_equipe_choisie.Controls.Add(uc);
+                uc.majdonnee(enginsAffichage, pompiersAffichage, idCaserne);
+            }
             }
         }
-
-        private void btn_ajout_mission_Click(object sender, EventArgs e)
-        {
-            //récupération de certaines données
-            int idMission = Convert.ToInt32(lbl_num_mission.Text);
-            string date = lbl_date.Text + " " + lbl_heure.Text;
-            int idSinistre = Convert.ToInt32(cbo_sinistre.SelectedValue);
-            int idCaserne = Convert.ToInt32(cbo_caserne.SelectedValue);
-
-            //table Mission
-            dtMission = MesDatas.DsGlobal.Tables["Mission"];
-
-            DataRow nouvelleMission = dtMission.NewRow();
-            nouvelleMission["id"] = idMission;
-            nouvelleMission["dateHeureDepart"] = date;
-            nouvelleMission["motifAppel"] = txt_raison.Text;
-            nouvelleMission["adresse"] = txt_rue.Text;
-            nouvelleMission["cp"] = txt_cp.Text;
-            nouvelleMission["ville"] = txt_ville.Text;
-            nouvelleMission["terminee"] = 0;
-            nouvelleMission["idNatureSinistre"] = idSinistre;
-            nouvelleMission["idCaserne"] = idCaserne;
-            dtMission.Rows.Add(nouvelleMission);
-
-            //table engin
-            dtEngins = MesDatas.DsGlobal.Tables["Engin"];
-            foreach (DataRow engin in enginsSelectionne.Rows)
-            {
-                DataRow[] ligne = dtEngins.Select($"numero = {engin["numero"]} AND codeTypeEngin = '{engin["codeTypeEngin"]}' AND idCaserne = {idCaserne}");
-                if (ligne.Length > 0)
-                {
-                    ligne[0]["enMission"] = 1;
-                }
-            }
-
-            //table pompier
-            dtPompiers = MesDatas.DsGlobal.Tables["Pompier"];
-            foreach (DataRow lignepompier in pompiersSelectionne.Rows)
-            {
-                string matricule = lignepompier["matriculePompier"].ToString();
-                DataRow[] ligne = dtPompiers.Select($"matricule = '{matricule}'");
-                if (ligne.Length > 0)
-                {
-                    ligne[0]["enMission"] = 1;
-                }
-            }
-
-            //table PartirAvec
-            dtPartirAvec = MesDatas.DsGlobal.Tables["PartirAvec"];
-            foreach (DataRow engin in enginsSelectionne.Rows)
-            {
-                DataRow newPartir = dtPartirAvec.NewRow();
-                newPartir["idCaserne"] = idCaserne;
-                newPartir["codeTypeEngin"] = engin["codeTypeEngin"];
-                newPartir["numeroEngin"] = engin["numero"];
-                newPartir["idMission"] = idMission;
-                newPartir["reparationsEventuelles"] = DBNull.Value;
-                dtPartirAvec.Rows.Add(newPartir);
-            }
-
-            //table mobiliser
-            dtMobiliser = MesDatas.DsGlobal.Tables["Mobiliser"];
-            foreach (DataRow pompier in pompiersSelectionne.Rows)
-            {
-                DataRow newMobiliser = dtMobiliser.NewRow();
-                newMobiliser["matriculePompier"] = pompier["matriculePompier"];
-                newMobiliser["idMission"] = idMission;
-                newMobiliser["idHabilitation"] = pompier["idHabilitation"];
-                dtMobiliser.Rows.Add(newMobiliser);
-            }
-        }
-    }
 }

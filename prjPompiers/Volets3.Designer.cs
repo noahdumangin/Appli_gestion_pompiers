@@ -31,13 +31,14 @@
             this.pctboxVROUMVROUM = new System.Windows.Forms.PictureBox();
             this.btnAllRight = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
-            this.gdvVROUMVROUM = new System.Windows.Forms.DataGridView();
             this.btnLeft = new System.Windows.Forms.Button();
             this.btnALLLeft = new System.Windows.Forms.Button();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.chkboxMission = new System.Windows.Forms.CheckBox();
             this.chkboxPanne = new System.Windows.Forms.CheckBox();
+            this.btnclose = new System.Windows.Forms.Button();
+            this.gdvVROUMVROUM = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pctboxVROUMVROUM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvVROUMVROUM)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             // btnAllRight
             // 
             this.btnAllRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnAllRight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.btnAllRight.Location = new System.Drawing.Point(447, 491);
             this.btnAllRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAllRight.Name = "btnAllRight";
@@ -66,6 +68,7 @@
             // btnRight
             // 
             this.btnRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnRight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.btnRight.Location = new System.Drawing.Point(328, 490);
             this.btnRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRight.Name = "btnRight";
@@ -75,20 +78,10 @@
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
-            // gdvVROUMVROUM
-            // 
-            this.gdvVROUMVROUM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gdvVROUMVROUM.Location = new System.Drawing.Point(640, 112);
-            this.gdvVROUMVROUM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gdvVROUMVROUM.Name = "gdvVROUMVROUM";
-            this.gdvVROUMVROUM.RowHeadersWidth = 62;
-            this.gdvVROUMVROUM.RowTemplate.Height = 28;
-            this.gdvVROUMVROUM.Size = new System.Drawing.Size(496, 189);
-            this.gdvVROUMVROUM.TabIndex = 3;
-            // 
             // btnLeft
             // 
             this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnLeft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.btnLeft.Location = new System.Drawing.Point(192, 491);
             this.btnLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLeft.Name = "btnLeft";
@@ -101,6 +94,7 @@
             // btnALLLeft
             // 
             this.btnALLLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnALLLeft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.btnALLLeft.Location = new System.Drawing.Point(68, 491);
             this.btnALLLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnALLLeft.Name = "btnALLLeft";
@@ -114,6 +108,7 @@
             // 
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblNom.ForeColor = System.Drawing.Color.White;
             this.lblNom.Location = new System.Drawing.Point(663, 336);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(81, 29);
@@ -124,6 +119,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblDate.ForeColor = System.Drawing.Color.White;
             this.lblDate.Location = new System.Drawing.Point(663, 374);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(81, 29);
@@ -134,6 +130,7 @@
             // 
             this.chkboxMission.AutoSize = true;
             this.chkboxMission.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.chkboxMission.ForeColor = System.Drawing.Color.White;
             this.chkboxMission.Location = new System.Drawing.Point(667, 417);
             this.chkboxMission.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkboxMission.Name = "chkboxMission";
@@ -146,6 +143,7 @@
             // 
             this.chkboxPanne.AutoSize = true;
             this.chkboxPanne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.chkboxPanne.ForeColor = System.Drawing.Color.White;
             this.chkboxPanne.Location = new System.Drawing.Point(667, 462);
             this.chkboxPanne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkboxPanne.Name = "chkboxPanne";
@@ -154,21 +152,49 @@
             this.chkboxPanne.Text = "En Panne";
             this.chkboxPanne.UseVisualStyleBackColor = true;
             // 
+            // btnclose
+            // 
+            this.btnclose.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnclose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
+            this.btnclose.Location = new System.Drawing.Point(689, 546);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(447, 39);
+            this.btnclose.TabIndex = 11;
+            this.btnclose.Text = "revenir au tableau de bord";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // gdvVROUMVROUM
+            // 
+            this.gdvVROUMVROUM.BackgroundColor = System.Drawing.Color.White;
+            this.gdvVROUMVROUM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdvVROUMVROUM.Location = new System.Drawing.Point(668, 52);
+            this.gdvVROUMVROUM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gdvVROUMVROUM.Name = "gdvVROUMVROUM";
+            this.gdvVROUMVROUM.RowHeadersWidth = 62;
+            this.gdvVROUMVROUM.RowTemplate.Height = 28;
+            this.gdvVROUMVROUM.Size = new System.Drawing.Size(458, 251);
+            this.gdvVROUMVROUM.TabIndex = 12;
+            // 
             // Volets3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(26)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(1148, 597);
+            this.Controls.Add(this.gdvVROUMVROUM);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.chkboxPanne);
             this.Controls.Add(this.chkboxMission);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.btnALLLeft);
             this.Controls.Add(this.btnLeft);
-            this.Controls.Add(this.gdvVROUMVROUM);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnAllRight);
             this.Controls.Add(this.pctboxVROUMVROUM);
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Volets3";
             this.Text = "Volets3";
@@ -185,12 +211,13 @@
         private System.Windows.Forms.PictureBox pctboxVROUMVROUM;
         private System.Windows.Forms.Button btnAllRight;
         private System.Windows.Forms.Button btnRight;
-        private System.Windows.Forms.DataGridView gdvVROUMVROUM;
         private System.Windows.Forms.Button btnLeft;
         private System.Windows.Forms.Button btnALLLeft;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.CheckBox chkboxMission;
         private System.Windows.Forms.CheckBox chkboxPanne;
+        private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.DataGridView gdvVROUMVROUM;
     }
 }

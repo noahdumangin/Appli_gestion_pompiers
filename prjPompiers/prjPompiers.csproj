@@ -35,6 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="affectationvolet2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\affectationvolet2.dll</HintPath>
+    </Reference>
+    <Reference Include="affichagevolet5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\affichagevolet5.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,6 +66,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="affectation_mission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="affectation_mission.Designer.cs">
+      <DependentUpon>affectation_mission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="affichagevolet5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="affichagevolet5.Designer.cs">
+      <DependentUpon>affichagevolet5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -110,6 +130,12 @@
     <Compile Include="Volets5.Designer.cs">
       <DependentUpon>Volets5.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="affectation_mission.resx">
+      <DependentUpon>affectation_mission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="affichagevolet5.resx">
+      <DependentUpon>affichagevolet5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
