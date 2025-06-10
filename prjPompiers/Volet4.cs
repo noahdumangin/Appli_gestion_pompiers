@@ -317,5 +317,30 @@ namespace prjPompiers
                 MessageBox.Show($"Erreur lors de la récupération des données : {err.Message}");
             }
         }
+
+        private void lblnewpomp_Click(object sender, EventArgs e)
+        {
+            nouveaupompier fe = new nouveaupompier();
+            DialogResult dr = fe.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+
+                MessageBox.Show("Création d'un nouveau pompier : ");
+            }
+            else
+            {
+                MessageBox.Show("Opération annulée");
+            }
+        }
+
+        private void pbretour_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

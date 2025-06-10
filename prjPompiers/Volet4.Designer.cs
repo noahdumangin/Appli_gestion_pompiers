@@ -82,6 +82,7 @@
             this.lblExit.Size = new System.Drawing.Size(213, 58);
             this.lblExit.TabIndex = 8;
             this.lblExit.Text = "Retour au tableau\r\n de bord";
+            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
             // pbretour
             // 
@@ -92,6 +93,7 @@
             this.pbretour.Size = new System.Drawing.Size(73, 64);
             this.pbretour.TabIndex = 7;
             this.pbretour.TabStop = false;
+            this.pbretour.Click += new System.EventHandler(this.pbretour_Click_1);
             // 
             // lblnewpomp
             // 
@@ -103,6 +105,7 @@
             this.lblnewpomp.Size = new System.Drawing.Size(354, 29);
             this.lblnewpomp.TabIndex = 6;
             this.lblnewpomp.Text = "Ajout d\'un nouveau pompier";
+            this.lblnewpomp.Click += new System.EventHandler(this.lblnewpomp_Click);
             // 
             // pbajout
             // 
@@ -116,6 +119,7 @@
             // 
             // cboPompier
             // 
+            this.cboPompier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPompier.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPompier.FormattingEnabled = true;
             this.cboPompier.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -138,6 +142,7 @@
             // 
             // cboCaserne
             // 
+            this.cboCaserne.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCaserne.FormattingEnabled = true;
             this.cboCaserne.Location = new System.Drawing.Point(72, 259);

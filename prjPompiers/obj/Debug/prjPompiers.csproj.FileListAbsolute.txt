@@ -83,3 +83,5 @@ C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPomp
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.Volets2.resources
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.loading.resources
 C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.Volets5.resources
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.Login.resources
+C:\Users\noahd\Documents\S2\SAE_A21\lucas\pompiers\prjPompiers\obj\Debug\prjPompiers.nouveaupompier.resources
