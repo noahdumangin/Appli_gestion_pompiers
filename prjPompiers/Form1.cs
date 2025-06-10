@@ -109,16 +109,16 @@ namespace prjPompiers
                     AjouteMission();
                     break;
                 case "Nouvelle Mission":
-                    new Volets2().Show();
+                    new Volets2().ShowDialog();
                     break;
                 case "Gestion des engins":
-                    new Volets3(MesDatas.DsGlobal, Connexion.Connec).Show();
+                    new Volets3(MesDatas.DsGlobal, Connexion.Connec).ShowDialog();
                     break;
                 case "Gestion du personnel":
-                    new Volet4().Show();
+                    new Volet4().ShowDialog();
                     break;
                 case "Statistiques":
-                    new Volets5().Show();
+                    new Volets5().ShowDialog();
                     break;
                 default:
                     MessageBox.Show("Aucun formulaire associé à cette PictureBox.");

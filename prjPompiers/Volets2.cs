@@ -294,6 +294,8 @@ namespace prjPompiers
                 newMobiliser["idHabilitation"] = pompier["idHabilitation"];
                 dtMobiliser.Rows.Add(newMobiliser);
             }
+            MessageBox.Show("la mission à été crée !");
+            this.Close();
         }
 
         private async void btn_mobilisation_Click_1(object sender, EventArgs e)
