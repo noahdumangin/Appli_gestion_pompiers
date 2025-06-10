@@ -30,9 +30,9 @@
               "Title": "UserControl1.cs",
               "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlMission\\UserControl1.cs",
               "RelativeDocumentMoniker": "UserControl1.cs",
-              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlMission\\UserControl1.cs",
-              "RelativeToolTip": "UserControl1.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAiwIoAAACvAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlMission\\UserControl1.cs*",
+              "RelativeToolTip": "UserControl1.cs*",
+              "ViewState": "AgIAACUBAAAAAAAAAAD4vzoBAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T09:21:28.821Z",
               "EditorCaption": ""
@@ -47,7 +47,8 @@
               "RelativeToolTip": "UserControl1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T09:28:35.481Z"
+              "WhenOpened": "2025-05-11T09:28:35.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -55,10 +56,11 @@
               "Title": "UserControl1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlMission\\UserControl1.cs",
               "RelativeDocumentMoniker": "UserControl1.cs",
-              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlMission\\UserControl1.cs [Design]",
-              "RelativeToolTip": "UserControl1.cs [Design]",
+              "ToolTip": "C:\\Users\\darkl\\Documents\\Cours\\pompiers\\UserControlMission\\UserControl1.cs [Design]*",
+              "RelativeToolTip": "UserControl1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T09:18:25.465Z"
+              "WhenOpened": "2025-05-11T09:18:25.465Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

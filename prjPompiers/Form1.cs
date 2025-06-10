@@ -46,36 +46,36 @@ namespace prjPompiers
                     da.Fill(MesDatas.DsGlobal, nomTable);
                     liste = liste + nomTable + "\n";
                 }
-                
+
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
 
-            List<string> list = new List<string> {"Tableau de bord", "Nouvelle Mission", "Gestion des engins", "Gestion du personnel", "Statistiques" };
+            List<string> list = new List<string> { "Tableau de bord", "Nouvelle Mission", "Gestion des engins", "Gestion du personnel", "Statistiques" };
             int x = 18;
             int y = 20;
-            Font LargeFont = new Font("Arial", 12);
+
             for (int i = 0; i < list.Count; i++)
-            {   
+            {
                 PictureBox pict = new PictureBox();
                 Label label = new Label();
                 label.Text = list[i].ToString();
-                label.Location = new Point(x+90, y+20);
+                label.Location = new Point(x + 90, y + 20);
                 label.ForeColor = Color.Black;
-                label.Font = LargeFont;
+                label.Font = new Font("Arial", 15);
                 label.Size = new Size(200, 50);
                 pict.Image = Image.FromFile("girophare.gif");
                 pict.SizeMode = PictureBoxSizeMode.StretchImage;
                 pict.Name = list[i];
                 pict.Cursor = Cursors.Hand;
                 pict.Size = new Size(80, 60);
-                pict.Location = new Point(x,y);
+                pict.Location = new Point(x, y);
                 pict.Click += new EventHandler(Afficher);
                 grbList.Controls.Add(pict);
                 grbList.Controls.Add(label);
-                y+= pict.Height + 50;
+                y += pict.Height + 50;
             }
 
             AjouteMission();
@@ -86,9 +86,8 @@ namespace prjPompiers
             flpMission.Controls.Clear();
             int x = 6;
             int y = 100;
-            for (int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
+            for (int i = ds.Tables["Mission"].Rows.Count - 1; i >= 0; i--)
             {
-               
                 UserControlMission mission = new UserControlMission(MesDatas.DsGlobal, i, Connexion.Connec);
                 mission.Name = "panel" + i;
                 mission.Location = new Point(x, y);
@@ -104,28 +103,27 @@ namespace prjPompiers
             string name = clickedPict.Name;
 
             switch (name)
-             {
-                 case "Tableau de bord":
+            {
+                case "Tableau de bord":
                     AjouteMission();
-                     break;
-                 case "Nouvelle Mission":
-                     new Volets2().Show();
-                     break;
-                 case "Gestion des engins":
-                     new Volets3(MesDatas.DsGlobal,Connexion.Connec).Show();
-                     break;
-                 case "Gestion du personnel":
-                     new Volet4().Show();
-                     break;
-                 case "Statistiques":
-                     new Volets5().Show();
-                     break;
-                 // Ajoute autant de cas que nécessaire
-                 default:
-                     MessageBox.Show("Aucun formulaire associé à cette PictureBox.");
-                     break;
-             }
-         }
+                    break;
+                case "Nouvelle Mission":
+                    new Volets2().Show();
+                    break;
+                case "Gestion des engins":
+                    new Volets3(MesDatas.DsGlobal, Connexion.Connec).Show();
+                    break;
+                case "Gestion du personnel":
+                    new Volet4().Show();
+                    break;
+                case "Statistiques":
+                    new Volets5().Show();
+                    break;
+                default:
+                    MessageBox.Show("Aucun formulaire associé à cette PictureBox.");
+                    break;
+            }
+        }
 
         private void pctLeave_Click(object sender, EventArgs e)
         {
@@ -137,7 +135,7 @@ namespace prjPompiers
             flpMission.Controls.Clear();
             if (chkEnCours.Checked == true)
             {
-                for(int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
+                for (int i = 0; i < ds.Tables["Mission"].Rows.Count; i++)
                 {
                     int x = 6;
                     int y = 100;
@@ -146,9 +144,11 @@ namespace prjPompiers
                     mission.Name = "panel" + i;
                     mission.Location = new Point(x, y);
                     y += mission.Height;
-                    if (mission.enMission()) {
+                    if (mission.enMission())
+                    {
                         continue;
-                    }else
+                    }
+                    else
                     {
                         flpMission.Controls.Add(mission);
                     }
@@ -163,5 +163,7 @@ namespace prjPompiers
 
 
         }
+
+
     }
 }
