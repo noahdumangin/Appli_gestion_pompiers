@@ -9,6 +9,7 @@ L’application permet de gérer les utilisateurs, d’assurer la connexion des 
 - [Fonctionnement](#fonctionnement)  
 - [Base de données](#base-de-données)
 - [Collabortaion](#collaboration)
+- [Images](#Images)
   
 
 ## Structure du projet
@@ -55,3 +56,20 @@ Le fichier `SDIS67.db` contient les tables principales attendues par l’applica
   ## Collaboration
 
   Réalisation de ce projet avec 2 étudiants.
+
+  ## Images
+
+  Pour illustrer la présentation voilà des captures d'écrans de l'application : 
+  
+  ![affichage des règles du jeu](Images/tableau_de_bord.png)
+  <br>
+  <p>Tableau de bord avec affichage des missions</p>
+  <br><br><br>
+  
+  ![affichage des résultats globalement](Images/VueGlobale.png)
+  <p>Fenêtre d'affichage des résultats global</p>
+  <br><br><br>
+  
+  ![affichage des résultats tour par tour](Images/Vuetour.png)
+  <p>Fenêtre d'affichage des résultats tour par tour</p>
+  <br><br><br>
