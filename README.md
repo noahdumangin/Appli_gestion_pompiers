@@ -5,14 +5,11 @@ L’application permet de gérer les utilisateurs, d’assurer la connexion des 
 
 
 ## Table des matières
-- [Structure du projet](#structure-du-projet)  
 - [Fonctionnement](#fonctionnement)  
 - [Base de données](#base-de-données)
 - [Collabortaion](#collaboration)
 - [Images](#images)
-  
 
-## Structure du projet
 
 ## Fonctionnement
 
