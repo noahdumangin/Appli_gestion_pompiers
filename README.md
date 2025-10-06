@@ -5,13 +5,15 @@ L’application permet de gérer les utilisateurs, d’assurer la connexion des 
 
 
 ## Table des matières
-- [Fonctionnement](#fonctionnement)  
-- [Base de données](#base-de-données)
+- [Description de l'application](#description-de-lapplication)
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation et lancement](#installation-et-lancement)
 - [Collabortaion](#collaboration)
 - [Images](#images)
 
+## Description de l'application 
 
-## Fonctionnement
+L'application est constituée de 5 fenêtres principales : 
 
 1. **Interface principale**
    L’utilisateur accède à l’interface affichant la liste des missions, leur statut, les détails et les affectations.
@@ -28,18 +30,30 @@ L’application permet de gérer les utilisateurs, d’assurer la connexion des 
 5. **Gestion des engins**
   Permet d'afficher les engins.
 
+Le but de cette application est de réaliser la gestion de plusieurs casernes par les opérateurs qui reçoivent les appels d'urgence principalement.
 
+## Technologies utilisées
 
-## Base de données
+- **Langage** : C#
+- **IDE** : Visual Studio 2022
+- **Base de données** : SQLite (`SDIS67.db`)
+- **Interface graphique** : Windows Forms
+- **Outils complémentaires** : DB Browser for SQLite, iTextSharp (PDF)
 
-Le fichier `SDIS67.db` contient les tables principales attendues par l’application (noms et colonnes peuvent varier) :
+## Installation et lancement
 
-- `Pompiers` — Informations des agents (id, nom, prénom, grade, login, mot_de_passe, etc.).  
-- `Missions` — Détails des interventions (id, type, date, localisation, statut, description).  
-- `Vehicules` *(si présent)* — Informations des véhicules (id, immatriculation, type).  
-- `Affectations` *(si présent)* — Liaison entre pompiers et missions.
-
-> Pour inspecter la base : utiliser un navigateur SQLite (DB Browser for SQLite) ou exécuter des requêtes depuis Visual Studio.
+1. **Cloner le projet** 
+   ```bash
+   git clone https://github.com/tonrepo/sdis-manager.git
+   ```
+2. **Ouvrir le projet dans Visual Studio**
+     Fichier → Ouvrir → Projet/Solution → Sélectionner le fichier .sln
+3. **Configurer la base de données**
+     - Vérifier que le fichier SDIS67.db est bien présent dans le dossier bin/Debug
+     - Sinon, copier manuellement le fichier dans ce dossie
+4. ** Lancer l’application**
+      Appuyer sur "Démarrer"
+   
 
   ## Collaboration
 
