@@ -9,19 +9,10 @@ L’application permet de gérer les utilisateurs, d’assurer la connexion des 
 - [Fonctionnement](#fonctionnement)  
 - [Base de données](#base-de-données)
 - [Collabortaion](#collaboration)
-- [Images](#Images)
+- [Images](#images)
   
 
 ## Structure du projet
-
-### Fichiers et dossiers principaux
-- `UserControlMission/` : Contient les contrôles utilisateurs (interfaces, formulaires, logique).  
-- `UserControlMission.sln` / `UserControlMission.csproj` : Solution et projet Visual Studio.  
-- `Connexion.cs` : Gestion de la connexion et authentification des utilisateurs.  
-- `UserControl1.cs`, `UserControl1.Designer.cs`, `UserControl1.resx` : Contrôle principal affichant les missions.  
-- `app.config` : Fichier de configuration .NET (chaînes de connexion et paramètres).  
-- `packages.config` : Dépendances NuGet.  
-- `SDIS67.db` : Base de données SQLite utilisée par l’application.  
 
 ## Fonctionnement
 
@@ -66,10 +57,30 @@ Le fichier `SDIS67.db` contient les tables principales attendues par l’applica
   <p>Tableau de bord avec affichage des missions</p>
   <br><br><br>
   
-  ![affichage des résultats globalement](Images/VueGlobale.png)
-  <p>Fenêtre d'affichage des résultats global</p>
+  ![pdf](Images/pdf.png)
+  <p>Possibilité de générer un pdf pour les missions</p>
   <br><br><br>
   
-  ![affichage des résultats tour par tour](Images/Vuetour.png)
-  <p>Fenêtre d'affichage des résultats tour par tour</p>
+  ![creation_missions](Images/creation_mission.png)
+  <p>Création de missions par les opérateurs des pompiers</p>
+  <br><br><br>
+
+  ![creation_missions](Images/loading.png)
+  <p>Fenêtre de chargement pour la création d'une mission</p>
+  <br><br><br>
+
+  ![creation_missions](Images/engins.png)
+  <p>Fenêtre de visionnage des engins </p>
+  <br><br><br>
+
+  ![creation_missions](Images/gestion_pompiers.png)
+  <p>Fenêtre de visionnage des pompiers avec possibilité de modifications</p>
+  <br><br><br>
+
+  ![creation_missions](Images/login.png)
+  <p>Possibilité de modification des pompiers avec identification de l'administrateur</p>
+  <br><br><br>
+
+  ![creation_missions](Images/statistiques.png)
+  <p>Statistiques des casernes/missions/engins</p>
   <br><br><br>
