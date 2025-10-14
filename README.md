@@ -44,7 +44,7 @@ Le but de cette application est de réaliser la gestion de plusieurs casernes pa
 
 1. **Cloner le projet** 
    ```bash
-   git clone https://github.com/tonrepo/sdis-manager.git
+   git clone (http / ssh) 
    ```
 2. **Ouvrir le projet dans Visual Studio**
      Fichier → Ouvrir → Projet/Solution → Sélectionner le fichier .sln
@@ -57,7 +57,7 @@ Le but de cette application est de réaliser la gestion de plusieurs casernes pa
 
   ## Collaboration
 
-  Réalisation de ce projet avec 2 étudiants.
+  Réalisation de ce projet avec 2 étudiants en 1ère année de BUT Informatique.
 
   ## Images
 
