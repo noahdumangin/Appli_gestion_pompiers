@@ -8,7 +8,7 @@ L’application permet de gérer les utilisateurs, d’assurer la connexion des 
 - [Description de l'application](#description-de-lapplication)
 - [Technologies utilisées](#technologies-utilisées)
 - [Installation et lancement](#installation-et-lancement)
-- [Collabortaion](#collaboration)
+- [Collaboration](#collaboration)
 - [Images](#images)
 
 ## Description de l'application 
